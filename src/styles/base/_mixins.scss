@@ -1,0 +1,90 @@
+@use "variables" as v;
+
+@mixin telefono-pequeno {
+  @media (min-width: v.$telefono_pequeno) {
+    @content;
+  }
+}
+
+@mixin telefono-mediano {
+  @media (min-width: v.$telefono_mediano) {
+    @content;
+  }
+}
+
+@mixin telefono-grande {
+  @media (min-width: v.$telefono_grande) {
+    @content;
+  }
+}
+
+@mixin tablet-pequena {
+  @media (min-width: v.$tablet_pequena) {
+    @content;
+  }
+}
+
+@mixin tablet-grande {
+  @media (min-width: v.$tablet_grande) {
+    @content;
+  }
+}
+
+@mixin desktop-mediana {
+  @media (min-width: v.$desktop_mediana) {
+    @content;
+  }
+}
+
+@mixin desktop-grande {
+  @media (min-width: v.$desktop_grande) {
+    @content;
+  }
+}
+
+@mixin grid($columnas, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columnas, 1fr);
+  gap: $gap;
+}
+
+@mixin circulo_R($width, $height, $fontSize) {
+  width: $width;
+  height: $height;
+  border: v.$primario 1px solid;
+  border-radius: 10rem;
+  background-color: v.$negro;
+  margin: 3rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: $fontSize;
+    color: v.$blanco;
+  }
+}
+
+@mixin boton($bgColor, $display, $borderRadius, $txtColor) {
+  background-color: $bgColor;
+  font-weight: v.$black;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: $display;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(1.8rem, 2vw, 2.2rem);
+  border-radius: $borderRadius;
+
+  &:hover {
+    background-color: darken($bgColor, 10%);
+  }
+  a {
+    color: $txtColor;
+  }
+}
+
+@mixin imgFondo($rutaImg) {
+  background-image: url($rutaImg);
+}

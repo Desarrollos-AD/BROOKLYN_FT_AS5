@@ -1,0 +1,79 @@
+---
+const year = new Date().getFullYear();
+const faceebook = "https://www.facebook.com/BrooklynBurgersCostaVerde";
+const tikTok = "https://www.tiktok.com/@brooklyn_brgr";
+const instagram = "https://www.instagram.com/brooklynbrgr/";
+const uberEat =
+  "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY";
+---
+
+<footer class="footer">
+  <div class="footer__secundario">
+    <div class="contenedor">
+      <div class="footer__contenido">
+
+        <div class="footer__contenido--logo">
+          <a href="#">
+            <img
+              src="/images/brooklyn.jpg"
+              alt="Logo Brooklyn"
+              loading="lazy"
+            />
+          </a>
+        </div>
+
+        <div class="barra__decorativa--vertical"></div>
+
+        <nav class="footer__contenido--navbar">
+          <div class="footer__contenido--navbar--item">
+            <a href="#">Inicio</a>
+          </div>
+          <div class="footer__contenido--navbar--item">
+            <a href="#">Nosotros</a>
+          </div>
+          <div class="footer__contenido--navbar--item">
+            <a href="#">Menú</a>
+          </div>
+          <div class="footer__contenido--navbar--item">
+            <a href="#">Uber Eats</a>
+          </div>
+        </nav>
+
+        <div class="barra__decorativa--vertical"></div>
+
+        <div class="footer__contenido--contenedor-redes">
+          <h4>Siguenos en:</h4>
+          <div class="footer__contenido--redes">
+            <a href={faceebook} target="_blank" rel="noopener noreferrer">
+              <img
+                src="/images/facebook.png"
+                alt="Icono Facebook"
+                loading="lazy"
+              />
+            </a>
+            <a href={instagram} target="_blank" rel="noopener noreferrer">
+              <img
+                src="/images/instagram.png"
+                alt="Icono Instagram"
+                loading="lazy"
+              />
+            </a>
+            <a href={tikTok} target="_blank" rel="noopener noreferrer">
+              <img src="/images/tikTok.png" alt="Icono Tiktok" loading="lazy" />
+            </a>
+            <a href={uberEat} target="_blank" rel="noopener noreferrer">
+              <img src="/images/uberEats.png" alt="Uber Eats" loading="lazy" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="barra__decorativa--horizontal"></div>
+      <div class="footer__contenido--privacidad">
+        <a href="#">
+          <span>Política de privacidad, Términos y condiciones - {year} </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

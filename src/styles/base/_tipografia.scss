@@ -1,0 +1,96 @@
+@use "variables" as v;
+
+.bebasNeueThin {
+  font-family: "bebas-neue-by-fontfabric", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.bebasNeueLight {
+  font-family: "bebas-neue-by-fontfabric", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.bebasNeueBook {
+  font-family: "bebas-neue-by-fontfabric", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bebasNeueRegular {
+  font-family: "bebas-neue-by-fontfabric", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebasNeueBold {
+  font-family: "bebas-neue-by-fontfabric", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.permanentMarkerProRegular {
+  font-family: "permanent-marker-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+}
+
+h4 {
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-weight: v.$bold;
+  // color: v.$fondo_principal;
+}
+
+h3,
+h4 {
+  font-weight: v.$delgada;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 2.7vw, 2.9rem);
+}
+
+h2 {
+  font-size: clamp(2.2rem, 2.4vw, 2.6rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 2.2vw, 2.4rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+}
+
+p {
+  font-size: clamp(1.4rem, 1.6vw, 1.8rem);
+}
+
+label,
+input,
+select,
+i {
+  font-size: clamp(1.3rem, 1.4vw, 1.6rem);
+}
+
+a {
+  text-decoration: none;
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
+
+  span {
+    font-size: clamp(.8rem, 1vw, 1.2rem);
+  }
+}

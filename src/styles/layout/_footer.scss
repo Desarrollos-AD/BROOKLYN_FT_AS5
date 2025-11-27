@@ -1,0 +1,108 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+.footer {
+  background-color: v.$amarillo;
+  &__secundario {
+    clip-path: polygon(0 0, 95% 4%, 100% 100%, 0% 100%);
+    background-color: v.$fondo_secundario;
+    display: flex;
+
+    @include mx.telefono_grande {
+      clip-path: polygon(0 0, 98.5% 10%, 100% 100%, 0% 100%);
+    }
+  }
+
+  &__contenido {
+    color: v.$blanco;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    align-items: center;
+
+    @include mx.telefono_grande {
+      flex-direction: row;
+      margin-top: 5rem;
+    }
+
+    &--logo {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 10rem;
+        margin: 0 auto;
+        border-radius: 50rem;
+      }
+    }
+
+    &--navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 2rem;
+      margin-top: 2.5rem;
+      flex: 2;
+
+      &--item {
+        a:hover {
+          color: v.$verde;
+        }
+      }
+    }
+
+    &--contenedor-redes {
+      flex: 1;
+      margin: 1rem auto;
+
+      @include mx.telefono_grande {
+        align-self: center;
+      }
+    }
+
+    &--redes {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 80%;
+      margin: 0 auto;
+
+      max-width: 15rem;
+      
+      @include mx.telefono_grande {
+        gap: 0rem;
+      }
+      a {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &--privacidad {
+      text-align: center;
+      margin: 1rem 0;
+      font-size: 1.4rem;
+
+      @include mx.telefono_grande {
+        margin: 2rem 0;
+      }
+
+      a {
+        color: v.$gris;
+        &:hover {
+          color: v.$blanco;
+        }
+      }
+    }
+  }
+}

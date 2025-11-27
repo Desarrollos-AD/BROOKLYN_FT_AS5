@@ -1,0 +1,51 @@
+@use "variables" as v;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: v.$negro;
+  line-height: 1.8;
+  letter-spacing: .2rem;
+  font-family: v.$fuente_principal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: v.$tr;
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: min(90%, 120rem);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: v.$bold;
+  color: v.$blanco;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+body > section {
+  padding: 8rem 0;
+}
