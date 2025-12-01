@@ -158,7 +158,6 @@
 }
 
 section {
-  display: flex;
   height: 100vh; /* Full viewport height */
   width: 100%;
   align-items: center;
@@ -169,7 +168,7 @@ section {
 }
 /* Home Section */
 #Home {
-  background: #eafaf1; /* Light green background */
+  // background: #eafaf1; /* Light green background */
 }
 /* Services Section */
 #Services {

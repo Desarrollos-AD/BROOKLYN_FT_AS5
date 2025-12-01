@@ -1,7 +1,8 @@
 ---
 import "../styles/app.scss";
-import Header from "../layouts/header.astro";
+import Header from "../layouts/headerIsla.astro";
 import Footer from "../layouts/footer.astro";
+import SeparadorTexto from "../components/separadorTexto.astro";
 ---
 
 <html lang="en">
@@ -10,15 +11,18 @@ import Footer from "../layouts/footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Brooklyn</title>
   </head>
   <body>
-    <Header />
-    <h1>Astro</h1>
-  </body>
+    <!-- <Header /> -->
 
-  <section id="Home">Home Section</section>
-  <section id="About">About Section</section>
+    <!-- <h1>Astro</h1> -->
+  </body>
+  <section id="Home"></section>
+
+  <section id="About">
+    <SeparadorTexto />
+  </section>
   <section id="Category">Category Section</section>
   <section id="Contact">Contact Section</section>
   <section id="Feedback">Feedback Section</section>
@@ -26,6 +30,5 @@ import Footer from "../layouts/footer.astro";
     <a href="#Home"><i class="fa-solid fa-arrow-up"></i></a>
   </div>
 
-  <script src="/scripts/main.js" type="module"></script>
   <Footer />
 </html>
