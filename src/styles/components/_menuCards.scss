@@ -1,0 +1,76 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+@use "sass:color";
+
+.menuCards {
+  h3 {
+    color: v.$blanco;
+    text-align: left;
+    font-weight: v.$bold;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 6rem;
+      height: 0.4rem;
+      background-color: v.$amarillo;
+      margin: 0 0 0 6rem;
+
+      @include mx.tablet-grande {
+        margin: 0 0 0 7rem;
+      }
+    }
+  }
+  &__tabs {
+    @include mx.tablet-grande {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    button {
+      border-radius: 4rem;
+
+      background-color: v.$verde;
+      border: none;
+      color: v.$negro;
+      display: block;
+      width: 100%;
+      font-weight: v.$bold;
+      transition: background-color 300ms ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: color.scale(v.$verde, $lightness: -20%);
+      }
+      &.actual {
+        background-color: v.$blanco;
+        color: v.$negro;
+      }
+    }
+  }
+}
+
+.ocultar {
+  visibility: hidden;
+}
+
+.listado-servicios {
+  display: grid;
+  gap: 2rem;
+  // @include m.tablet {
+  //     @include m.grid(2, 2rem);
+  // }
+}
+
+.menuCards__tabs--seccion {
+  padding: 5rem 0;
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
+.ocultar {
+  display: none;
+}

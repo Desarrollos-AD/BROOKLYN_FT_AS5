@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "titulo": "Producto 1",
+    "descripcion": "Descripción del producto 1",
+    "imagen": "/images/producto1.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Producto 2",
+    "descripcion": "Descripción del producto 2",
+    "imagen": "/images/producto2.jpg"
+  }
+]

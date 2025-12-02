@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "sass:color";
 
 @mixin telefono-pequeno {
   @media (min-width: v.$telefono_pequeno) {
@@ -48,29 +49,12 @@
   gap: $gap;
 }
 
-@mixin circulo_R($width, $height, $fontSize) {
-  width: $width;
-  height: $height;
-  border: v.$primario 1px solid;
-  border-radius: 10rem;
-  background-color: v.$negro;
-  margin: 3rem auto 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  i {
-    font-size: $fontSize;
-    color: v.$blanco;
-  }
-}
-
 @mixin boton($bgColor, $display, $borderRadius, $txtColor) {
   background-color: $bgColor;
   font-weight: v.$black;
   padding: 1rem 3rem;
   text-align: center;
-  margin-top: 2.5rem;
+  margin: 2.5rem 0;
   display: $display;
   border: none;
   cursor: pointer;
@@ -78,7 +62,7 @@
   border-radius: $borderRadius;
 
   &:hover {
-    background-color: darken($bgColor, 10%);
+    background-color: color.scale($bgColor, $lightness: -15%);
   }
   a {
     color: $txtColor;

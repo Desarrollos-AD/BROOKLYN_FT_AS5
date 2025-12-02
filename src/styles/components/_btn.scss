@@ -1,0 +1,6 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+.btn__amarillo {
+  @include mx.boton(v.$amarillo, block, 2rem, v.$negro);
+}

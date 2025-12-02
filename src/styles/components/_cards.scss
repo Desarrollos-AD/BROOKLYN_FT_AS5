@@ -1,0 +1,54 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+@use "sass:color";
+
+.cards {
+  @include mx.grid(1, 2rem);
+
+  @include mx.telefono-mediano {
+    @include mx.grid(2, 2rem);
+  }
+  @include mx.tablet-grande {
+    @include mx.grid(4, 2rem);
+  }
+
+  .card {
+    background-color: v.$grisCards;
+    border-radius: 2rem;
+    border: 1px solid v.$gris;
+
+    h4 {
+      color: v.$amarillo;
+      font-weight: v.$bold;
+    }
+
+    &__img {
+      width: 65%;
+      margin: 0 auto;
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    &__descripcion {
+      p {
+        color: v.$blanco;
+
+        &::after {
+          content: " ";
+          width: 100%;
+          height: .3rem;
+          background-color: v.$amarillo;
+          display: block;
+        }
+        &::before {
+          content: " ";
+          width: 100%;
+          height: .2rem;
+          background-color: v.$amarillo;
+          display: block;
+        }
+      }
+    }
+  }
+}

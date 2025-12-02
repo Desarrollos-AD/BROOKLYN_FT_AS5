@@ -127,7 +127,7 @@
 .button-menu.close span {
   opacity: 1;
   transform: rotate(45deg) translate(0px, 0px);
-  background: #ffffff;
+  background: v.$blanco;
 }
 
 .button-menu.close span:nth-child(2) {
@@ -157,15 +157,15 @@
   }
 }
 
-section {
-  height: 100vh; /* Full viewport height */
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  font-size: 70px;
-  color: #2e4053; /* Darker color for section text */
-  text-align: center; /* Centering text */
-}
+// section {
+//   height: 100vh; /* Full viewport height */
+//   width: 100%;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 70px;
+//   color: #2e4053; /* Darker color for section text */
+//   text-align: center; /* Centering text */
+// }
 /* Home Section */
 #Home {
   // background: #eafaf1; /* Light green background */

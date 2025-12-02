@@ -2,7 +2,8 @@
 import "../styles/app.scss";
 import Header from "../layouts/headerIsla.astro";
 import Footer from "../layouts/footer.astro";
-import SeparadorTexto from "../components/separadorTexto.astro";
+import SeparadorTexto from "../components/ui/separadorTexto.astro";
+import MenuCardsIsla from "../components/islands/menuCardsIsla.astro";
 ---
 
 <html lang="en">
@@ -14,14 +15,15 @@ import SeparadorTexto from "../components/separadorTexto.astro";
     <title>Brooklyn</title>
   </head>
   <body>
-    <!-- <Header /> -->
+    <Header />
 
     <!-- <h1>Astro</h1> -->
-  </body>
-  <section id="Home"></section>
+  </body><section id="Home"></section>
 
   <section id="About">
     <SeparadorTexto />
+
+    <MenuCardsIsla />
   </section>
   <section id="Category">Category Section</section>
   <section id="Contact">Contact Section</section>

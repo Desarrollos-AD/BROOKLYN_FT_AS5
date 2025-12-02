@@ -1,0 +1,98 @@
+---
+import CardsMenu from "../ui/cards.astro";
+---
+
+<div class="menuCards contenedor">
+  <h3>Nuestro menú</h3>
+  <nav class="menuCards__tabs">
+    <button class="actual" type="button" data-paso="1">Snacks</button>
+    <button type="button" data-paso="2">Munchies</button>
+    <button type="button" data-paso="3">Burgers</button>
+    <button type="button" data-paso="4">Grill</button>
+    <button type="button" data-paso="5">Soft drinks</button>
+    <button type="button" data-paso="6">Refrescos</button>
+    <button type="button" data-paso="7">Postres</button>
+  </nav>
+
+  <div id="paso-1" class="menuCards__tabs--seccion">
+    <!-- <h2>Snacks</h2> -->
+    <div class="">
+      <CardsMenu />
+    </div>
+  </div>
+
+  <div id="paso-2" class="menuCards__tabs--seccion">
+    <!-- <h2>Munchies</h2> -->
+    <CardsMenu />
+  </div>
+  <div id="paso-3" class="menuCards__tabs--seccion">
+    <!-- <h2>Burgers</h2> -->
+    <CardsMenu />
+  </div>
+  <div id="paso-4" class="menuCards__tabs--seccion">
+    <!-- <h2>Grill</h2> -->
+    <CardsMenu />
+  </div>
+  <div id="paso-5" class="menuCards__tabs--seccion">
+    <!-- <h2>Soft drinks</h2> -->
+    <CardsMenu />
+  </div>
+  <div id="paso-6" class="menuCards__tabs--seccion">
+    <!-- <h2>Refrescos</h2> -->
+    <CardsMenu />
+  </div>
+  <div id="paso-7" class="menuCards__tabs--seccion">
+    <!-- <h2>Postres</h2> -->
+    <CardsMenu />
+  </div>
+</div>
+
+<script is:client="load">
+  let paso = 1;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    iniciarApp();
+  });
+
+  function iniciarApp() {
+    mostrarSeccion(); // Muestra y oculta las secciones
+    tabs(); // Cambia la sección cuando se presionen los tabs
+    botonesPaginador(); // Agrega o quita los botones del paginador
+  }
+
+  function mostrarSeccion() {
+    // Ocultar la sección que tenga la clase de mostrar
+    const seccionAnterior = document.querySelector(".mostrar");
+    if (seccionAnterior) {
+      seccionAnterior.classList.remove("mostrar");
+    }
+
+    // Seleccionar la sección con el paso...
+    const pasoSelector = `#paso-${paso}`;
+    const seccion = document.querySelector(pasoSelector);
+    seccion.classList.add("mostrar");
+
+    // Quita la clase de actual al tab anterior
+    const tabAnterior = document.querySelector(".actual");
+    if (tabAnterior) {
+      tabAnterior.classList.remove("actual");
+    }
+
+    // Resalta el tab actual
+    const tab = document.querySelector(`[data-paso="${paso}"]`);
+    tab.classList.add("actual");
+  }
+
+  function tabs() {
+    // Agrega y cambia la variable de paso según el tab seleccionado
+    const botones = document.querySelectorAll(".menuCards__tabs button");
+    botones.forEach((boton) => {
+      boton.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        paso = parseInt(e.target.dataset.paso);
+        mostrarSeccion();
+      });
+    });
+  }
+</script>
