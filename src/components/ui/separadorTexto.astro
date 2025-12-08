@@ -1,33 +1,44 @@
 ---
+const { texto } = Astro.props;
 
+const palabras = texto.split(" ");
+const primera = palabras.shift();
+// const ultima = palabras.pop();
+const resto = palabras.join(" ");
 ---
 
 <div class="separadorTexto">
   <div class="separadorTexto__carrusel">
     <h2 class="bebasNeueBold">
-      <span>MENÚ</span> BROOKLIYN BURGER
+      <span>{primera}</span>
+      {resto}
     </h2>
 
     <h2 class="bebasNeueBold">
-      <span>MENÚ</span> BROOKLIYN BURGER
+      <span>{primera}</span>
+      {resto}
     </h2>
 
     <h2 class="bebasNeueBold">
-      <span>MENÚ</span> BROOKLIYN BURGER
+      <span>{primera}</span>
+      {resto}
     </h2>
   </div>
-  
+
   <div aria-hidden class="separadorTexto__carrusel">
     <h2 class="bebasNeueBold">
-      <span>MENÚ</span> BROOKLIYN BURGER
+      <span>{primera}</span>
+      {resto}
     </h2>
 
     <h2 class="bebasNeueBold">
-      <span>MENÚ</span> BROOKLIYN BURGER
+      <span>{primera}</span>
+      {resto}
     </h2>
 
     <h2 class="bebasNeueBold">
-      <span>MENÚ</span> BROOKLIYN BURGER
+      <span>{primera}</span>
+      {resto}
     </h2>
   </div>
 </div>

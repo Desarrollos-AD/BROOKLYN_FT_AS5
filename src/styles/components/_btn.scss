@@ -4,3 +4,14 @@
 .btn__amarillo {
   @include mx.boton(v.$amarillo, block, 2rem, v.$negro);
 }
+.btn__negro {
+  @include mx.boton(v.$negro,  inline-block, 1rem, v.$negro);
+  margin-top: 5rem;
+  float: right;
+}
+.btn__verde {
+  @include mx.boton(v.$verde,  inline-block, 1rem, v.$verde);
+  margin-top: 5rem;
+  float: right;
+  color: v.$negro;
+}

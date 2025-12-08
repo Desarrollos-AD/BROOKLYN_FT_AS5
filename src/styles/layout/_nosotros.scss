@@ -1,0 +1,80 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+.sobreNosotros {
+  background-color: v.$gris;
+  &__contenido {
+    display: flex;
+    height: 80vh;
+
+    &--figura {
+      background-color: aqua;
+      width: 200rem;
+      height: 75%;
+      margin-left: 70rem;
+      border-radius: 50%;
+    }
+    &--info {
+      h1 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+      }
+      p {
+        color: v.$blanco;
+      }
+    }
+  }
+}
+
+.historia {
+  &__contenido {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 0;
+    gap: 2rem;
+
+    @include mx.telefono-grande {
+      flex-direction: row;
+    }
+
+    h2 {
+      color: v.$blanco;
+      font-size: clamp(3rem, 4.5vw, 6rem);
+    }
+
+    p {
+      color: v.$gris_claro;
+    }
+  }
+}
+.barraHistoria__contenedor {
+  background-color: v.$gris;
+}
+.barraHistoria {
+  display: flex;
+  justify-content: space-around;
+  &__info {
+    &--img {
+      background-color: v.$blanco;
+      border-radius: 50%;
+      padding: 1rem;
+      width: 7rem;
+      height: 7rem;
+    }
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  h4 {
+    color: v.$verde;
+
+    span {
+      font-size: 3rem;
+    }
+  }
+}

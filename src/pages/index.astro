@@ -1,36 +1,37 @@
 ---
+import Layout from "../layouts/layout.astro";
 import "../styles/app.scss";
 import Header from "../layouts/headerIsla.astro";
-import Footer from "../layouts/footer.astro";
 import SeparadorTexto from "../components/ui/separadorTexto.astro";
 import MenuCardsIsla from "../components/islands/menuCardsIsla.astro";
+import OfertasEpeciales from "../components/ui/ofertasEpeciales.astro";
+import SeparadorSobreNosotros from "../components/ui/separadorSobreNosotros.astro";
+import Ubicaciones from "../components/islands/ubicaciones.astro";
+import Envios from "../components/ui/envios.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Brooklyn</title>
-  </head>
-  <body>
-    <Header />
+<Layout titulo="Inicio">
+  <Header />
 
-    <!-- <h1>Astro</h1> -->
-  </body><section id="Home"></section>
+  <section id="Home"></section>
 
   <section id="About">
-    <SeparadorTexto />
+    <SeparadorTexto texto="MENÚ BROOKLIYN BURGER" />
 
     <MenuCardsIsla />
+
+    <OfertasEpeciales />
+
+    <SeparadorSobreNosotros />
   </section>
-  <section id="Category">Category Section</section>
-  <section id="Contact">Contact Section</section>
-  <section id="Feedback">Feedback Section</section>
+  <section>
+    <SeparadorTexto texto="Visítanos en una de nuestras 9 sucursales" />
+
+    <Ubicaciones />
+
+    <Envios />
+  </section>
   <div class="button">
     <a href="#Home"><i class="fa-solid fa-arrow-up"></i></a>
   </div>
-
-  <Footer />
-</html>
+</Layout>

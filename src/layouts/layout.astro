@@ -1,0 +1,40 @@
+---
+import "../styles/app.scss";
+import Header from "../layouts/headerIsla.astro";
+import Footer from "../layouts/footer.astro";
+import SeparadorTexto from "../components/ui/separadorTexto.astro";
+import MenuCardsIsla from "../components/islands/menuCardsIsla.astro";
+import OfertasEpeciales from "../components/ui/ofertasEpeciales.astro";
+import SeparadorSobreNosotros from "../components/ui/separadorSobreNosotros.astro";
+import Ubicaciones from "../components/islands/ubicaciones.astro";
+import Envios from "../components/ui/envios.astro";
+
+const titulo = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"
+    ></script>
+    <title>Brooklyn-{titulo}</title>
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+  <Footer />
+</html>

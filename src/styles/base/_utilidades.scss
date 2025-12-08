@@ -37,3 +37,22 @@
     color: v.$negro;
   }
 }
+
+.h3_linea--decoraccion {
+  color: v.$blanco;
+  text-align: left;
+  font-weight: v.$bold;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 6rem;
+    height: 0.4rem;
+    background-color: v.$amarillo;
+    margin: 0 0 0 6rem;
+
+    @include mx.tablet-grande {
+      margin: 0 0 0 7rem;
+    }
+  }
+}

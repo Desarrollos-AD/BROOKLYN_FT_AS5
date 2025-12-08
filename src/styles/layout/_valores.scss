@@ -1,0 +1,68 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+.valores {
+  @include mx.grid(2, 1px);
+  @include mx.telefono-mediano {
+    position: relative;
+  }
+  @include mx.tablet-pequena {
+    margin: 0 auto;
+    width: min(90%, 120rem);
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    @include mx.telefono-pequeno {
+      height: 25rem;
+    }
+    @include mx.telefono-grande {
+      width: 100%;
+      height: 40rem;
+      overflow: hidden;
+      z-index: -1;
+    }
+    @include mx.tablet-grande {
+      height: 55rem;
+    }
+    img {
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .valores__descripcion {
+    width: 100%;
+    grid-column: 1/3;
+    height: 40rem;
+    background-color: v.$gris;
+
+    @include mx.telefono-mediano {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 55%;
+      height: 55%;
+      background-color: v.$gris;
+      z-index: 100;
+    }
+    @include mx.tablet-pequena {
+      width: 50%;
+      height: 40%;
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      color: v.$gris_claro;
+    }
+  }
+}

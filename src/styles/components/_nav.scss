@@ -22,7 +22,9 @@
 
     &--logo {
       width: 5rem;
-
+      @include mx.telefono_grande {
+        width: 8rem;
+      }
       &-enlace {
         img {
           width: 10rem;

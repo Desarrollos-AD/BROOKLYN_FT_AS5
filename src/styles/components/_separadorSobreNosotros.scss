@@ -1,0 +1,49 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+.fondo__separadorNosotros {
+  background-image: url(../../../public/images/sobreNosotros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60rem;
+  position: relative;
+  z-index: 1;
+}
+
+.separadorNosotros {
+  @include mx.grid(1, 2rem);
+  align-items: center;
+  place-items: center;
+  margin: 1rem 0;
+  
+  @include mx.telefono-mediano {
+    @include mx.grid(2, 5rem);
+    margin: 15rem 0;
+  }
+
+  &__encabezado {
+    height: 100%;
+    h2 {
+      color: v.$verde;
+      font-size: 5rem;
+    }
+  }
+  &__contenido {
+    height: 100%;
+    p {
+      color: v.$blanco;
+    }
+  }
+}
+
+.colorFondo {
+  background-color: rgba(43, 43, 43, 0.493);
+  position: absolute;
+  height: 60rem;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -999;
+}

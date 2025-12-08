@@ -1,5 +1,6 @@
 ---
-
+const uberEats =
+  "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY";
 ---
 
 <nav class="nav">
@@ -19,19 +20,18 @@
           </div>
 
           <div class="nav__barra--enlaces--links-enlace activo">
-            <a class="bebasNeueBold" href="#Home">Home</a>
+            <a class="bebasNeueBold" href="/">Inicio</a>
           </div>
           <div class="nav__barra--enlaces--links-enlace">
-            <a class="bebasNeueBold" href="#About">About</a>
+            <a class="bebasNeueBold" href="/nosotros">Nosotros</a>
           </div>
           <div class="nav__barra--enlaces--links-enlace">
-            <a class="bebasNeueBold" href="#Category">Category</a>
+            <a class="bebasNeueBold" href="/menu">Menú</a>
           </div>
           <div class="nav__barra--enlaces--links-enlace">
-            <a class="bebasNeueBold" href="#Contact">Contact</a>
-          </div>
-          <div class="nav__barra--enlaces--links-enlace">
-            <a class="bebasNeueBold" href="#Feedback">Feedback</a>
+            <a class="bebasNeueBold" href={uberEats} target="_blank"
+              >Uber Eats</a
+            >
           </div>
         </div>
       </div>

@@ -1,161 +1,298 @@
-.slider {
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+/* --- Carousel --- */
+.carousel__header {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel__header .list .item {
+  height: 25rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 400px;
-  background: #f5f5f5;
-  box-shadow: 0 30px 50px #dbdbdb;
-  border-radius: 20px;
+  top: 80%;
+  transform: translateY(-70%);
+  left: 70%;
+  border-radius: 2rem;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+  transition: 1s;
 
-  &__contenido {
-    border-radius: 20px;
-
-    .item {
-      width: 200px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%);
-      border-radius: 20px;
-      box-shadow: 0 30px 50px #505050;
-      background-position: 50% 50%;
-      background-size: cover;
-      display: inline-block;
-      transition: all 0.5s;
-
-      &:nth-child(1),
-      &:nth-child(2) {
-        top: 0;
-        left: 0;
-        transform: translate(0, 0);
-        border-radius: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        transition: all 0.5s;
-      }
-
-      &:nth-child(3) {
-        left: 50%;
-      }
-      &:nth-child(4) {
-        left: calc(50% + 220px);
-      }
-      &:nth-child(5) {
-        left: calc(50% + 440px);
-      }
-
-      &:nth-child(n + 6) {
-        left: calc(50% + 660px);
-        opacity: 0;
-      }
-      &:nth-child(2) .content {
-        display: block;
-      }
-
-      .content {
-        position: absolute;
-        top: 50%;
-        left: 100px;
-        width: 300px;
-        text-align: left;
-        color: #ececec;
-        transform: translate(0, -50%);
-        font-family: system-ui;
-        display: none;
-
-        .name {
-          font-size: 40px;
-          text-transform: uppercase;
-          font-weight: bold;
-          opacity: 0;
-          animation: animate 1s ease-in-out 1 forwards;
-        }
-
-        .des {
-          margin-top: 10px;
-          margin-bottom: 20px;
-          opacity: 0;
-          animation: animate 1s ease-in-out 0.3s 1 forwards;
-        }
-      }
-    }
+  @include mx.tablet_pequena {
+    box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 1);
+    width: 18rem;
   }
 }
 
-.content button {
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+/* Main items */
+.carousel__header .list .item:nth-child(1),
+.carousel__header .list .item:nth-child(2) {
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  transform: none;
+  border-radius: 0;
+}
+
+/* Extra items on right */
+.carousel__header .list .item:nth-child(3) {
+  left: 67%;
+}
+.carousel__header .list .item:nth-child(4) {
+  left: calc(67% + 200px);
+}
+.carousel__header .list .item:nth-child(5) {
+  left: calc(67% + 400px);
+}
+.carousel__header .list .item:nth-child(6) {
+  left: calc(67% + 600px);
+}
+
+/* Hide items after 6th */
+.carousel__header .list .item:nth-child(n + 7) {
+  left: calc(67% + 800px);
   opacity: 0;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.673);
-  transition: all 0.5s;
-  animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-.content button:hover {
-  background-color: rgb(255, 255, 255);
+/* --- Content inside active item --- */
+.list .item .content {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translateY(-50%);
+  width: 40rem;
+  text-align: left;
+  color: v.$blanco;
+  display: none;
 }
 
+.list .item:nth-child(2) .content {
+  display: block;
+}
+
+/* Text animations */
+.content .title,
+.content .name,
+.content .des,
+.content .btn {
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .title {
+  font-size: 15rem;
+  color: #000000cb;
+  font-weight: bold;
+  animation-delay: 0.3s;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: v.$blanco;
+  text-shadow: 4px 5px 5px v.$amarillo;
+  white-space: nowrap;
+  z-index: -999;
+  position: absolute;
+  top: -100%;
+  left: 150%;
+  transform: translate(-100%, -100%);
+}
+
+.content .name {
+  font-size: 10rem;
+  font-weight: bold;
+  text-shadow: 3px 4px 4px v.$amarillo;
+  animation-delay: 0.6s;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  z-index: -999;
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  transform: translate(-50%, -50%);
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    position: relative;
+    width: 10%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 8rem 4rem;
+    display: flex;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // izquierda
+    padding-block: 5rem;
+  }
+
+  .name {
+    font-size: 10rem;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+    transform: translateY(-50%) rotate(180deg);
+    white-space: nowrap;
+    color: v.$blanco;
+    text-shadow: 3px 4px 4px v.$amarillo;
+    z-index: 10;
+
+    @include mx.tablet_pequena {
+      left: 3rem;
+      top: 35%;
+    }
+  }
+  &__descripcion {
+    margin-left: 4rem;
+    margin-top: 63rem;
+    width: 100%;
+
+    @include mx.tablet_pequena {
+      margin-top: 75rem;
+    }
+  }
+
+  .title {
+    font-size: 14rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px v.$blanco;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 28%;
+    transform: translateY(-80%);
+    white-space: nowrap;
+    z-index: 9;
+    left: 7rem;
+
+    @include mx.tablet_pequena {
+      top: 20%;
+      left: 25rem;
+    }
+  }
+  .des {
+    width: 100%;
+    color: v.$blanco;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    z-index: 20;
+  }
+
+  .btn {
+    float: left;
+    margin-top: 1rem;
+  }
+}
+
+/* Animation keyframe */
 @keyframes animate {
   from {
     opacity: 0;
-    transform: translate(0, 100px);
+    transform: translateY(100px);
     filter: blur(33px);
   }
-
   to {
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
     filter: blur(0);
   }
 }
 
-.button {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  left: 45%;
-  right: 50%;
-  width: 100%;
-  align-items: center;
-  text-align: center;
+/* --- Arrows --- */
+.arrows {
   position: absolute;
-  bottom: 20px;
+  top: 90%;
+  right: 25%;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 30%;
+  align-items: center;
+  z-index: 100;
+  margin: 0 auto;
 
   button {
-    width: 40px;
-    height: 35px;
-    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: v.$verde;
+    color: v.$negro;
+    font-weight: bold;
+    font-size: 3.5rem;
     border: none;
     cursor: pointer;
-    margin: 0 5px;
-    border: 2px solid #000000bd;
-    transition: 0.3s;
-    background: rgba(255, 255, 255, 0.578);
+    transition: 0.5s;
 
     &:hover {
-      color: #000000;
-      border: 2px solid #ffffffbd;
-      transform: scale(1.1);
+      background: v.$blanco;
+      color: v.$negro;
     }
-    &:focus {
-      transform: scale(1.1);
-      background: #ffffff;
-      border: 2px solid #ffffffbd;
-    }
-    &:active {
-      transform: scale(1.02);
-    }
+  }
+}
 
-    .next {
-      padding: 0 0 0 3px;
-    }
-    .prev {
-      padding: 0 3px 0 0;
-    }
+/* --- Progress bar --- */
+.carousel .timeRunning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: v.$verde;
+  animation: runningTime 7s linear forwards;
+}
+
+@keyframes runningTime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 999px) {
+  header {
+    padding-left: 50px;
+  }
+  .list .item .content {
+    left: 50px;
+  }
+  .content .title,
+  .content .name {
+    font-size: 90px;
+  }
+  .content .des {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  header nav a {
+    font-size: 14px;
+    margin-right: 0;
+  }
+  .list .item .content {
+    top: 40%;
+  }
+  .content .title,
+  .content .name {
+    font-size: 55px;
+  }
+  .content .btn button {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }

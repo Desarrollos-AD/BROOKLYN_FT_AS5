@@ -3,7 +3,7 @@ import CardsMenu from "../ui/cards.astro";
 ---
 
 <div class="menuCards contenedor">
-  <h3>Nuestro menú</h3>
+  <h3 class="h3_linea--decoraccion">Nuestro menú</h3>
   <nav class="menuCards__tabs">
     <button class="actual" type="button" data-paso="1">Snacks</button>
     <button type="button" data-paso="2">Munchies</button>
@@ -57,7 +57,6 @@ import CardsMenu from "../ui/cards.astro";
   function iniciarApp() {
     mostrarSeccion(); // Muestra y oculta las secciones
     tabs(); // Cambia la sección cuando se presionen los tabs
-    botonesPaginador(); // Agrega o quita los botones del paginador
   }
 
   function mostrarSeccion() {

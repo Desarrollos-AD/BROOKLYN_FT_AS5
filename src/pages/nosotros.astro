@@ -1,0 +1,103 @@
+---
+import Layout from "../layouts/layout.astro";
+import Nav from "../components/islands/navIsla.astro";
+import Vision from "../components/islands/vision.astro";
+import Mision from "../components/islands/mision.astro";
+import MomentosGalleria from "../layouts/momentos.astro";
+---
+
+<Layout titulo="Nosotros">
+  <header>
+    <Nav />
+
+    <div class="sobreNosotros">
+      <div class="contenedor">
+        <div class="sobreNosotros__contenido">
+          <div class="sobreNosotros__contenido--info">
+            <h1>Sobre Nosotros</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero
+              quia, eligendi autem ab maxime. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Harum impedit neque expedita
+              sapiente nostrum, cupiditate sit dicta tenetur quo nobis!
+            </p>
+          </div>
+          <div class="sobreNosotros__contenido--figura">
+            <div class="sobreNosotros__contenido--figura--contenido"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="historia">
+    <div class="contenedor">
+      <div class="historia__contenido">
+        <div class="historia__contenido--img">
+          <img
+            src="/public/images/historia_1.jpg"
+            alt="Imagen historia"
+            loading="lazy"
+          />
+        </div>
+        <div class="historia__contenido--info">
+          <h2>dolor sit amet consectetur.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+            nesciunt praesentium quo maiores accusantium fugit adipisci minus
+            dignissimos repellat sit.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+            nesciunt praesentium quo maiores accusantium fugit adipisci minus
+            dignissimos repellat sit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="barraHistoria__contenedor">
+      <div class="contenedor">
+        <div class="barraHistoria">
+          <div class="barraHistoria__info">
+            <div class="barraHistoria__info--img">
+              <img
+                src="/public/images/sucursal.png"
+                alt="Logo Sucursal"
+                loading="lazy"
+              />
+            </div>
+            <h4><span>9</span> Socursales</h4>
+          </div>
+          <div class="barraHistoria__info">
+            <div class="barraHistoria__info--img">
+              <img
+                src="/public/images/comidaRapida.png"
+                alt="Logo Sucursal"
+                loading="lazy"
+              />
+            </div>
+            <h4><span>+20</span> Platillos</h4>
+          </div>
+          <div class="barraHistoria__info">
+            <div class="barraHistoria__info--img">
+              <img
+                src="/public/images/personal.png"
+                alt="Logo Sucursal"
+                loading="lazy"
+              />
+            </div>
+            <h4><span>+30</span> Colaboradores</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Vision />
+
+  <Mision />
+
+  <MomentosGalleria />
+</Layout>

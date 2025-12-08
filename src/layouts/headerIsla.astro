@@ -1,134 +1,295 @@
 ---
 import Nav from "../components/islands/navIsla.astro";
 ---
-<header>
-  <Nav />
-  <!-- 
-  <div class="contenedor">
-    <div class="slider">
-      <div class="slider__contenido" >
-        <div
-          class="slider__contenido--item item"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-          "
-        >
-          <div class="content">
-            <div class="name">Scotland</div>
-            <div class="des">
-              Experience the mystical Highlands under twilight skies and misty
-              lochs.
-            </div>
-            <a
-              class="seeMore"
-              target="_blank"
-              href="https://github.com/MDJAmin"
-            >
-              <button>See More</button>
-            </a>
-          </div>
-        </div>
 
-        <div
-          class="item"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-          "
-        >
-          <div class="content">
-            <div class="name">Norway</div>
-            <div class="des">
-              Chase the Northern Lights under star-lit skies along scenic fjord
-              roads.
-            </div>
-            <a
-              class="seeMore"
-              target="_blank"
-              href="https://github.com/MDJAmin"
-            >
-              <button>See More</button>
-            </a>
+<Nav />
+<!-- Main Carousel Container -->
+<div class="carousel__header">
+  <!-- Carousel Items Wrapper -->
+  <div class="list">
+    <!-- Carousel Item 1 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">Sin nombre</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
           </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
         </div>
-        <div
-          class="item"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-          "
-        >
-          <div class="content">
-            <div class="name">Norway</div>
-            <div class="des">
-              Chase the Northern Lights under star-lit skies along scenic fjord
-              roads.
-            </div>
-            <a class="seeMore" target="_blank" href="https://github.com/MDJAmin"
-              ><button>See More</button></a
-            >
-          </div>
-        </div>
-
-        <div
-          class="item"
-          style="  background-image: url('https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
-        >
-          <div class="content">
-            <div class="name">New Zealand</div>
-            <div class="des">
-              Wander dramatic, mist-laden mountain paths that feel straight out
-              of a dream.
-            </div>
-            <a
-              class="seeMore"
-              target="_blank"
-              href="https://github.com/MDJAmin"
-            >
-              <button>See More</button>
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="item"
-          style="background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
-        >
-          <div class="content">
-            <div class="name">Japan</div>
-            <div class="des">
-              Discover serene mountain temples shrouded in dusk and ancient
-              forest trails.
-            </div>
-            <a
-              class="seeMore"
-              target="_blank"
-              href="https://github.com/MDJAmin"
-            >
-              <button>See More</button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="button">
-        <button class="prev">◁</button>
-        <button class="next">▷</button>
       </div>
     </div>
-  </div>-->
-</header>
-<!-- 
-<script is:client="load">
-  //   "use strict";
 
-  let next = document.querySelector(".next");
-  let prev = document.querySelector(".prev");
+    <!-- Carousel Item 2 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_1.jpg)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">La mexicana</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
 
-  next.addEventListener("click", function () {
-    let items = document.querySelectorAll(".item");
-    document.querySelector(".slider__contenido").appendChild(items[0]);
-  });
+    <!-- Carousel Item 3 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">La mexicana</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
 
-  prev.addEventListener("click", function () {
-    let items = document.querySelectorAll(".item");
-    document.querySelector(".slider__contenido").prepend(items[items.length - 1]);
-  });
-</script> -->
+    <!-- Carousel Item 4 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">La mexicana</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 5 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">La mexicana</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 6 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">La mexicana</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 7 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">La mexicana</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 8 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">La mexicana</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 9 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">SLIDER</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 10 -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_2.png)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">SLIDER</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 11 (Repeated Parrot) -->
+    <div
+      class="item"
+      style="background-image: url(/public/images/header_1.jpg)"
+    >
+      <div class="content">
+        <div class="name">Menú Brooklyn</div>
+        <div class="title">SLIDER</div>
+        <div class="item__descripcion">
+          <div class="des">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            culpa similique consequuntur, reprehenderit dicta repudiandae.
+          </div>
+          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of .list -->
+
+  <!-- Navigation Arrows for Carousel -->
+  <div class="arrows">
+    <button class="prev"><</button>
+    <button class="next">></button>
+  </div>
+
+  <!-- Progress Bar or Time Running Indicator -->
+  <div class="timeRunning"></div>
+
+  <!-- End of .carousel -->
+
+  <!-- JavaScript -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-LLWL5N9CSM");
+  </script>
+
+  <script is:client="load">
+    // Select DOM elements
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+    const carousel = document.querySelector(".carousel__h");
+    const list = document.querySelector(".list");
+    const items = document.querySelectorAll(".item");
+    const runningTime = document.querySelector(".carousel__h .timeRunning");
+
+    // Timing configs
+    const timeRunning = 3000;
+    const timeAutoNext = 5000;
+
+    let runTimeout;
+    let autoNext = setTimeout(() => {
+      nextBtn.click();
+    }, timeAutoNext);
+
+    // Next/prev button click events
+    nextBtn.onclick = () => showSlider("next");
+    prevBtn.onclick = () => showSlider("prev");
+
+    // Reset progress bar animation
+    function resetTimeAnimation() {
+      runningTime.style.animation = "none";
+      runningTime.offsetHeight; // trigger reflow
+      runningTime.style.animation = "runningTime 7s linear 1 forwards";
+    }
+
+    // Handle carousel slide logic
+    function showSlider(direction) {
+      const sliderItems = list.querySelectorAll(
+        ".carousel__header .list .item"
+      );
+
+      if (direction === "next") {
+        list.appendChild(sliderItems[0]); // move first to last
+        carousel.classList.add("next");
+      } else {
+        list.prepend(sliderItems[sliderItems.length - 1]); // move last to first
+        carousel.classList.add("prev");
+      }
+
+      // Remove animation class after slide transition
+      clearTimeout(runTimeout);
+      runTimeout = setTimeout(() => {
+        carousel.classList.remove("next");
+        carousel.classList.remove("prev");
+      }, timeRunning);
+
+      // Reset auto next timer
+      clearTimeout(autoNext);
+      autoNext = setTimeout(() => {
+        nextBtn.click();
+      }, timeAutoNext);
+
+      resetTimeAnimation();
+    }
+
+    // Start animation on load
+    resetTimeAnimation();
+  </script>
+</div>

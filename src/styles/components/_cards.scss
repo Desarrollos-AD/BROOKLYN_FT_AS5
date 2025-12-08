@@ -2,7 +2,7 @@
 @use "../base/mixins" as mx;
 @use "sass:color";
 
-.cards {
+.tarjetas {
   @include mx.grid(1, 2rem);
 
   @include mx.telefono-mediano {
@@ -11,43 +11,74 @@
   @include mx.tablet-grande {
     @include mx.grid(4, 2rem);
   }
+}
+.tarjeta {
+  background-color: v.$grisCards;
+  border-radius: 2rem;
+  border: 1px solid v.$gris;
+  padding: 2rem;
+  opacity: var(--card-opacity-inactive);
+  filter: blur(var(--card-blur-inactive))
+    saturate(var(--card-saturate-inactive));
+  transform: scale(var(--card-scale-inactive))
+    translateY(var(--card-y-offset-inactive));
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition-property: transform, opacity, filter, box-shadow, border-color;
+  transition-duration: var(--duration-normal);
+  transition-timing-function: var(--timing-soft-eio);
+  will-change: transform, opacity, filter, box-shadow;
+  contain: content;
 
-  .card {
-    background-color: v.$grisCards;
-    border-radius: 2rem;
-    border: 1px solid v.$gris;
+  &:not(.active):hover {
+    transform: scale(calc(var(--card-scale-inactive) + 0.025))
+      translateY(calc(var(--card-y-offset-inactive) - 8px));
+    box-shadow: var(--shadow-lg);
+    opacity: 0.9;
+    filter: blur(calc(var(--card-blur-inactive) - 0.4px)) saturate(1);
+    z-index: 5;
+    border-color: rgba(var(--color-accent-primary-rgb), 0.2);
+  }
 
-    h4 {
-      color: v.$amarillo;
-      font-weight: v.$bold;
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-lg), var(--shadow-focus-ring);
+    border-color: var(--color-accent-primary);
+  }
+  h4 {
+    color: v.$amarillo;
+    font-weight: v.$bold;
+  }
+
+  &__img {
+    width: 65%;
+    margin: 0 auto;
+    img {
+      margin: 0 0  2rem 0;
+      border-radius: 50%;
     }
+  }
 
-    &__img {
-      width: 65%;
-      margin: 0 auto;
-      img {
-        border-radius: 50%;
+  &__descripcion {
+    p {
+      color: v.$blanco;
+
+      &::after {
+        content: " ";
+        width: 100%;
+        height: 0.3rem;
+        background-color: v.$amarillo;
+        display: block;
       }
-    }
-
-    &__descripcion {
-      p {
-        color: v.$blanco;
-
-        &::after {
-          content: " ";
-          width: 100%;
-          height: .3rem;
-          background-color: v.$amarillo;
-          display: block;
-        }
-        &::before {
-          content: " ";
-          width: 100%;
-          height: .2rem;
-          background-color: v.$amarillo;
-          display: block;
-        }
+      &::before {
+        content: " ";
+        width: 100%;
+        height: 0.2rem;
+        background-color: v.$amarillo;
+        display: block;
       }
     }
   }

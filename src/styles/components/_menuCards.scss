@@ -3,42 +3,32 @@
 @use "sass:color";
 
 .menuCards {
-  h3 {
-    color: v.$blanco;
-    text-align: left;
-    font-weight: v.$bold;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 6rem;
-      height: 0.4rem;
-      background-color: v.$amarillo;
-      margin: 0 0 0 6rem;
-
-      @include mx.tablet-grande {
-        margin: 0 0 0 7rem;
-      }
-    }
-  }
   &__tabs {
-    @include mx.tablet-grande {
-      display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    @include mx.telefono-grande {
       flex-direction: row;
-      gap: 2rem;
+      flex-wrap: nowrap;
     }
 
     button {
       border-radius: 4rem;
-
+      padding: 1rem 0;
       background-color: v.$verde;
       border: none;
       color: v.$negro;
       display: block;
-      width: 100%;
+      width: 45%;
       font-weight: v.$bold;
       transition: background-color 300ms ease;
       cursor: pointer;
+
+      @include mx.tablet-grande {
+        width: 100%;
+      }
 
       &:hover {
         background-color: color.scale(v.$verde, $lightness: -20%);
@@ -55,13 +45,13 @@
   visibility: hidden;
 }
 
-.listado-servicios {
-  display: grid;
-  gap: 2rem;
-  // @include m.tablet {
-  //     @include m.grid(2, 2rem);
-  // }
-}
+// .listado-servicios {
+//   display: grid;
+//   gap: 2rem;
+//   // @include m.tablet {
+//   //     @include m.grid(2, 2rem);
+//   // }
+// }
 
 .menuCards__tabs--seccion {
   padding: 5rem 0;

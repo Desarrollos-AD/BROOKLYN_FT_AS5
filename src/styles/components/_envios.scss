@@ -1,0 +1,22 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+@use "sass:color";
+
+.uber {
+  &__contenido {
+    margin-bottom: 5rem;
+    @include mx.grid(1, 3rem);
+
+    @include mx.telefono_grande {
+      @include mx.grid(2, 5rem);
+    }
+    &--info {
+      h2 {
+        color: v.$verde;
+      }
+      p {
+        color: v.$blanco;
+      }
+    }
+  }
+}

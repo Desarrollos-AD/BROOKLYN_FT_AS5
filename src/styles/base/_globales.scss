@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   background-color: v.$negro;
   line-height: 1.8;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-family: v.$fuente_principal;
 }
 
@@ -41,9 +41,9 @@ a {
   font-weight: v.$bold;
   color: v.$blanco;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 img {
   max-width: 100%;
 }
-

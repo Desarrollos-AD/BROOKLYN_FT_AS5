@@ -3,6 +3,7 @@
 @import url("https://use.typekit.net/lqe4pzu.css");
 
 $fuente_principal: "bebas-neue-by-fontfabric", sans-serif;
+$fuente_secundaria: "permanent-marker-pro", sans-serif;
 
 $delgada: 300;
 $regular: 400;
@@ -20,8 +21,9 @@ $desktop_grande: 1920px;
 
 //colores
 $negro: #000000;
-$gris: #808080;
-$grisCards: #1F2025;
+$gris: #181818;
+$gris_claro: #636363;
+$grisCards: #101116;
 $verde: #01ea00;
 $amarillo: #fbb515;
 $blanco: #ffffff;
@@ -32,3 +34,111 @@ $fondo_secundario: #232429;
 $whatsapp: #25d366;
 
 $tr: all 0.1s ease 0s;
+
+//variables cards y carrucel
+
+:root {
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #f9faff;
+  --color-surface-accent: #f0f6ff;
+  --color-surface-overlay: rgba(240, 246, 255, 0.65);
+
+  --color-text-primary: #1a202c;
+  --color-text-secondary: #4a5568;
+  --color-text-tertiary: #718096;
+  --color-text-on-accent: #ffffff;
+
+  --color-accent-secondary: #e6f0ff;
+  --color-accent-primary-rgb: 0, 82, 204;
+  --color-surface-accent-rgb: 240, 246, 255;
+
+  --color-rating: #ffb400;
+  --color-featured-badge-bg-start: #ffdd57;
+  --color-featured-badge-bg-end: #ffb400;
+  --color-featured-badge-text: #4a3b00;
+  --color-featured-badge-icon: #9e7300;
+
+  --color-border-light: rgba(0, 27, 71, 0.1);
+  --color-border-interactive: rgba(0, 27, 71, 0.25);
+
+  --category-electronics-bg: #e0e7ff;
+  --category-gaming-bg: #dcfce7;
+  --category-photo-bg: #fffbeb;
+  --category-photo-text: #b45309;
+  --category-wearables-bg: #dbeafe;
+  --category-audio-bg: #fee2e2;
+  --category-audio-text: #b91c1c;
+
+  --shadow-xs: 0 1px 2px rgba(26, 32, 44, 0.03);
+  --shadow-sm: 0 2px 4px rgba(26, 32, 44, 0.05);
+  --shadow-md: 0 6px 16px rgba(26, 32, 44, 0.07);
+  --shadow-lg: 0 12px 32px rgba(26, 32, 44, 0.09);
+  --shadow-xl: 0 24px 48px rgba(26, 32, 44, 0.1),
+    0 8px 16px rgba(26, 32, 44, 0.06);
+  --shadow-focus-ring: 0 0 0 3px var(--color-border-focus);
+  --shadow-inset-light: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-inset-active: inset 0 2px 4px rgba(0, 0, 0, 0.08);
+
+  --duration-micro: 100ms;
+  --duration-fast: 200ms;
+  --duration-normal: 350ms;
+  --duration-slow: 500ms;
+  --duration-extra-slow: 900ms;
+
+  --timing-ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --timing-ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --timing-ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+  --timing-soft-eio: cubic-bezier(0.76, 0, 0.24, 1);
+  --timing-anticipate: cubic-bezier(0.38, -0.2, 0.36, 1.4);
+  --timing-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --timing-elegant-snap: cubic-bezier(0.25, 0.1, 0.2, 1.25);
+
+  --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.375rem;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+
+  --spacing-unit: 4px;
+  --space-xs: calc(var(--spacing-unit) * 1);
+  --space-sm: calc(var(--spacing-unit) * 2);
+  --space-md: calc(var(--spacing-unit) * 4);
+  --space-lg: calc(var(--spacing-unit) * 6);
+  --space-xl: calc(var(--spacing-unit) * 8);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  --card-min-width: 280px;
+  --card-max-width: 320px;
+  --card-height: 510px;
+  --card-padding: var(--space-lg);
+  --card-margin-inline: var(--space-md);
+  --card-scale-inactive: 0.92;
+  --card-y-offset-inactive: 0px;
+  --card-opacity-inactive: 0.7;
+  --card-blur-inactive: 0.8px;
+  --card-saturate-inactive: 0.9;
+  --card-scale-active: 1.035;
+  --card-y-offset-active: -12px;
+  --card-active-border-width: 2.5px;
+
+  --carousel-perspective: 2000px;
+  --carousel-arrow-size: 44px;
+  --carousel-arrow-offset: calc(var(--carousel-arrow-size) / -2.2);
+
+  --focus-outline-offset: 2px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
