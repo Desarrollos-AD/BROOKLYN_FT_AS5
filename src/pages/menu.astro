@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/layout.astro";
 import Nav from "../components/islands/navIsla.astro";
+
+import productos from "../data/menu.json";
 ---
 
 <Layout titulo="Menú">
@@ -10,39 +12,22 @@ import Nav from "../components/islands/navIsla.astro";
       <div class="content">
         <div class="bg-shape"></div>
 
-        <div class="product-img">
-          <div class="product-img__item" id="img1">
-            <img
-              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405217/starwars/item-1.webp"
-              alt="star wars"
-              class="product-img__img"
-            />
-          </div>
-
-          <div class="product-img__item" id="img2">
-            <img
-              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405217/starwars/item-2.webp"
-              alt="star wars"
-              class="product-img__img"
-            />
-          </div>
-
-          <div class="product-img__item" id="img3">
-            <img
-              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405218/starwars/item-3.webp"
-              alt="star wars"
-              class="product-img__img"
-            />
-          </div>
-
-          <div class="product-img__item" id="img4">
-            <img
-              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405215/starwars/item-4.webp"
-              alt="star wars"
-              class="product-img__img"
-            />
-          </div>
-        </div>
+        {
+          productos.map((producto) => (
+            <div class="product-img">
+              <div class="product-img__item" id={`img${producto.id}`}>
+                <img
+                  src={producto.imagen}
+                  alt={`Imagen ${producto.titulo}`}
+                  class="product-img__img"
+                  width="900"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          ))
+        }
 
         <div class="product-slider">
           <button class="prev disabled">
@@ -61,92 +46,44 @@ import Nav from "../components/islands/navIsla.astro";
           </button>
 
           <div class="product-slider__wrp swiper-wrapper">
-            <div class="product-slider__item swiper-slide" data-target="img4">
-              <div class="product-slider__card">
-                <div class="product-slider__content">
-                  <span class="product-slider__price">$1.599,<sup>99</sup></span
-                  >
-                  <h1 class="product-slider__title">
-                    Hamburguesa <br />
-                    Sin nombre
-                  </h1>
-                  <div class="product-ctr">
-                    <div class="product-labels">
-                      <div class="product-labels__title">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. numquam ut, nesciunt eos possimus aut voluptatem
-                          at!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-slider__bottom">
-                    <button class="product-slider__cart"
-                      >Pidela en Uber Eats</button
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+            {
+              productos.map((producto) => (
+                <div
+                  class="product-slider__item swiper-slide"
+                  data-target={`img${producto.id}`}
+                  key={producto.id}
+                >
+                  <div class="product-slider__card">
+                    <div class="product-slider__content">
+                      <span class="product-slider__price">
+                        {producto.precio}
+                      </span>
 
-            <div class="product-slider__item swiper-slide" data-target="img2">
-              <div class="product-slider__card">
-                <div class="product-slider__content">
-                  <span class="product-slider__price">$1.599,<sup>99</sup></span
-                  >
-                  <h1 class="product-slider__title">
-                    Hamburguesa <br />
-                    Sin nombre
-                  </h1>
-                  <div class="product-ctr">
-                    <div class="product-labels">
-                      <div class="product-labels__title">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. numquam ut, nesciunt eos possimus aut voluptatem
-                          at!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-slider__bottom">
-                    <button class="product-slider__cart"
-                      >Pidela en Uber Eats</button
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+                      <h1 class="product-slider__title">{producto.titulo}</h1>
 
-            <div class="product-slider__item swiper-slide" data-target="img1">
-              <div class="product-slider__card">
-                <div class="product-slider__content">
-                  <span class="product-slider__price">$1.599,<sup>99</sup></span
-                  >
-                  <h1 class="product-slider__title">
-                    Hamburguesa <br />
-                    Sin nombre
-                  </h1>
-                  <div class="product-ctr">
-                    <div class="product-labels">
-                      <div class="product-labels__title">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. numquam ut, nesciunt eos possimus aut voluptatem
-                          at!
-                        </p>
+                      <div class="product-ctr">
+                        <div class="product-labels">
+                          <div class="product-labels__title">
+                            <p>{producto.descripcion}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="product-slider__bottom">
+                        <a
+                          href="https://www.ubereats.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="product-slider__cart"
+                        >
+                          Pídela en Uber Eats
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="product-slider__bottom">
-                    <button class="product-slider__cart"
-                      >Pidela en Uber Eats</button
-                    >
-                  </div>
                 </div>
-              </div>
-            </div>
+              ))
+            }
           </div>
         </div>
       </div>

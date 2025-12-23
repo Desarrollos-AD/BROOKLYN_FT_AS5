@@ -1,14 +1,162 @@
 [
   {
     "id": 1,
-    "titulo": "Producto 1",
-    "descripcion": "Descripción del producto 1",
+    "titulo": "Alitas",
+    "descripcion": "10 piezas, se acompañan con aderezo ranch y papas gajo.",
+    "precio": "$185.00",
+    "imagen_sf": "/images/producto1.jpg",
     "imagen": "/images/producto1.jpg"
   },
   {
     "id": 2,
-    "titulo": "Producto 2",
-    "descripcion": "Descripción del producto 2",
+    "titulo": "Boneless",
+    "descripcion": "10 piezas, se acompañan con aderezo ranch y papas gajo.",
+    "precio": "$185.00",
+    "imagen_sf": "/images/producto2.jpg",
     "imagen": "/images/producto2.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Aros de Cebolla",
+    "descripcion": "15 piezas, se acompañan con aderezo ranch.",
+    "precio": "$128.00",
+    "imagen_sf": "/images/producto3.jpg",
+    "imagen": "/images/producto3.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Papas a la Francesa",
+    "descripcion": "400 gm, se acompañan con aderezo ranch.",
+    "precio": "$122.00",
+    "imagen_sf": "/images/producto4.jpg",
+    "imagen": "/images/producto4.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Papas Gajo",
+    "descripcion": "400 gm, se acompañan con aderezo ranch.",
+    "precio": "$122.00",
+    "imagen_sf": "/images/producto5.jpg",
+    "imagen": "/images/producto5.jpg"
+  },
+  {
+    "id": 6,
+    "titulo": "Buffalo Fries",
+    "descripcion": "Papas a la francesa con queso Cheddar, ranch y boneless con salsa Buffalo.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/producto6.jpg",
+    "imagen": "/images/producto6.jpg"
+  },
+  {
+    "id": 7,
+    "titulo": "Sonora Fries",
+    "descripcion": "Papas a la francesa con arrachera, queso mozzarella, queso Cheddar, tocino y cilantro.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/producto7.jpg",
+    "imagen": "/images/producto7.jpg"
+  },
+  {
+    "id": 8,
+    "titulo": "Burger Potatoes",
+    "descripcion": "Papas crisscut McCain con queso Cheddar, carne de burger, pico de gallo y aderezo de la casa.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/producto8.jpg",
+    "imagen": "/images/producto8.jpg"
+  },
+  {
+    "id": 9,
+    "titulo": "Lord",
+    "descripcion": "250 gramos de carne de la casa con aros de cebolla, salsa BBQ, aderezo de la casa, tocino y vegetales. Acompañadas de papas gajo.",
+    "precio": "$184.00",
+    "imagen_sf": "/images/producto9.jpg",
+    "imagen": "/images/producto9.jpg"
+  },
+  {
+    "id": 10,
+    "titulo": "Hawaiian",
+    "descripcion": "250 gramos de carne de la casa con piña asada, champiñones, aderezo y tocino. Acompañadas de papas gajo.",
+    "precio": "$184.00",
+    "imagen_sf": "/images/producto10.jpg",
+    "imagen": "/images/producto10.jpg"
+  },
+  {
+    "id": 11,
+    "titulo": "Sliders",
+    "descripcion": "1/4 de libra de carne de la casa, base de cebolla caramelizada, mezcla de quesos y tocino. Acompañadas de papas gajo.",
+    "precio": "$138.00",
+    "imagen_sf": "/images/producto11.jpg",
+    "imagen": "/images/producto11.jpg"
+  },
+  {
+    "id": 12,
+    "titulo": "McAllen",
+    "descripcion": "250 gramos de carne de la casa, base de vegetales, aderezo y tocino. Acompañadas de papas gajo.",
+    "precio": "$157.00",
+    "imagen_sf": "/images/producto12.jpg",
+    "imagen": "/images/producto12.jpg"
+  },
+  {
+    "id": 13,
+    "titulo": "Brooklyn",
+    "descripcion": "250 gm de carne de la casa con champiñones salteados con mantequilla, tocino ahumado con nogal, queso Monterrey Jack y Cheddar madurado. Acompañadas de papas gajo.",
+    "precio": "$261.00",
+    "imagen_sf": "/images/producto13.jpg",
+    "imagen": "/images/producto13.jpg"
+  },
+  {
+    "id": 14,
+    "titulo": "Double Cheese",
+    "descripcion": "250 gramos de carne de la casa con mezcla de quesos Monterrey Jack y Cheddar madurado con crujientes de tocino. Acompañadas de papas gajo.",
+    "precio": "$205.00",
+    "imagen_sf": "/images/producto14.jpg",
+    "imagen": "/images/producto14.jpg"
+  },
+  {
+    "id": 15,
+    "titulo": "Ranch",
+    "descripcion": "Salsa cremosa a base de mayonesa, suero de leche, cebollín y especias.",
+    "precio": "$22.00",
+    "imagen_sf": "/images/producto15.jpg",
+    "imagen": "/images/producto15.jpg"
+  },
+  {
+    "id": 16,
+    "titulo": "Horchata de Mango",
+    "descripcion": "Horchata de mango.",
+    "precio": "$80.00",
+    "imagen_sf": "/images/producto16.jpg",
+    "imagen": "/images/producto16.jpg"
+  },
+  {
+    "id": 17,
+    "titulo": "Cheese Fingers",
+    "descripcion": "Cheese fingers.",
+    "precio": "$150.00",
+    "imagen_sf": "/images/producto17.jpg",
+    "imagen": "/images/producto17.jpg"
+  },
+  {
+    "id": 18,
+    "titulo": "Jalapeño Poppers",
+    "descripcion": "Jalapeño poppers.",
+    "precio": "$126.00",
+    "imagen_sf": "/images/producto18.jpg",
+    "imagen": "/images/producto18.jpg"
+  },
+  {
+    "id": 19,
+    "titulo": "Sweet Potato Fries",
+    "descripcion": "Sweet potato fries.",
+    "precio": "$173.00",
+    "imagen_sf": "/images/producto19.jpg",
+    "imagen": "/images/producto19.jpg"
+  },
+  {
+    "id": 20,
+    "titulo": "Quesitos Mexicanos Picantes",
+    "descripcion": "Quesitos Mexicanos picantes.",
+    "precio": "$115.00",
+    "imagen_sf": "/images/producto20.jpg",
+    "imagen": "/images/producto20.jpg"
   }
 ]
