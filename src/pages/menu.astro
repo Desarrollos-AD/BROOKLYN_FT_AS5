@@ -2,7 +2,7 @@
 import Layout from "../layouts/layout.astro";
 import Nav from "../components/islands/navIsla.astro";
 
-import productos from "../data/menu.json";
+import productos from "../data/hamburguesas.json";
 ---
 
 <Layout titulo="Menú">
@@ -17,7 +17,7 @@ import productos from "../data/menu.json";
             <div class="product-img">
               <div class="product-img__item" id={`img${producto.id}`}>
                 <img
-                  src={producto.imagen}
+                  src={`/images/header/${producto.imagen_sf}`}
                   alt={`Imagen ${producto.titulo}`}
                   class="product-img__img"
                   width="900"

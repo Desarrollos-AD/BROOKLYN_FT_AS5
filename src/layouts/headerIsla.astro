@@ -1,5 +1,6 @@
 ---
 import Nav from "../components/islands/navIsla.astro";
+import Menu from "../data/hamburguesas.json";
 ---
 
 <Nav />
@@ -8,288 +9,119 @@ import Nav from "../components/islands/navIsla.astro";
   <!-- Carousel Items Wrapper -->
   <div class="list">
     <!-- Carousel Item 1 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">Sin nombre</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
+    {
+      Menu.map((item) => (
+        <div
+          class="item"
+          style={`background-image: url(/images/header/${item.imagen})`}
+        >
+          <div class="content">
+            <div class="name">Menú Brooklyn</div>
 
-    <!-- Carousel Item 2 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_1.jpg)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
+            <div class="title">{item.titulo}</div>
 
-    <!-- Carousel Item 3 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
+            <div class="item__descripcion">
+              <div class="des">{item.descripcion}</div>
 
-    <!-- Carousel Item 4 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
+              <a
+                href={item.enlace}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn__verde btn"
+              >
+                Pídela en Uber Eats
+              </a>
+            </div>
           </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
         </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 5 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 6 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 7 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 8 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 9 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">SLIDER</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 10 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">SLIDER</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 11 (Repeated Parrot) -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_1.jpg)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">SLIDER</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End of .list -->
-
-  <!-- Navigation Arrows for Carousel -->
-  <div class="arrows">
-    <button class="prev"><</button>
-    <button class="next">></button>
+      ))
+    }
   </div>
 
-  <!-- Progress Bar or Time Running Indicator -->
-  <div class="timeRunning"></div>
+    <!-- Navigation Arrows for Carousel -->
+    <div class="arrows">
+      <button class="prev"><</button>
+      <button class="next">></button>
+    </div>
 
-  <!-- End of .carousel -->
+    <!-- Progress Bar or Time Running Indicator -->
+    <div class="timeRunning"></div>
 
-  <!-- JavaScript -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-LLWL5N9CSM");
-  </script>
+    <!-- End of .carousel -->
 
-  <script is:client="load">
-    // Select DOM elements
-    const nextBtn = document.querySelector(".next");
-    const prevBtn = document.querySelector(".prev");
-    const carousel = document.querySelector(".carousel__h");
-    const list = document.querySelector(".list");
-    const items = document.querySelectorAll(".item");
-    const runningTime = document.querySelector(".carousel__h .timeRunning");
-
-    // Timing configs
-    const timeRunning = 3000;
-    const timeAutoNext = 5000;
-
-    let runTimeout;
-    let autoNext = setTimeout(() => {
-      nextBtn.click();
-    }, timeAutoNext);
-
-    // Next/prev button click events
-    nextBtn.onclick = () => showSlider("next");
-    prevBtn.onclick = () => showSlider("prev");
-
-    // Reset progress bar animation
-    function resetTimeAnimation() {
-      runningTime.style.animation = "none";
-      runningTime.offsetHeight; // trigger reflow
-      runningTime.style.animation = "runningTime 7s linear 1 forwards";
-    }
-
-    // Handle carousel slide logic
-    function showSlider(direction) {
-      const sliderItems = list.querySelectorAll(
-        ".carousel__header .list .item"
-      );
-
-      if (direction === "next") {
-        list.appendChild(sliderItems[0]); // move first to last
-        carousel.classList.add("next");
-      } else {
-        list.prepend(sliderItems[sliderItems.length - 1]); // move last to first
-        carousel.classList.add("prev");
+    <!-- JavaScript -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
+      gtag("config", "G-LLWL5N9CSM");
+    </script>
 
-      // Remove animation class after slide transition
-      clearTimeout(runTimeout);
-      runTimeout = setTimeout(() => {
-        carousel.classList.remove("next");
-        carousel.classList.remove("prev");
-      }, timeRunning);
+    <script is:client="load">
+      // Select DOM elements
+      const nextBtn = document.querySelector(".next");
+      const prevBtn = document.querySelector(".prev");
+      const carousel = document.querySelector(".carousel__h");
+      const list = document.querySelector(".list");
+      const items = document.querySelectorAll(".item");
+      const runningTime = document.querySelector(".carousel__h .timeRunning");
 
-      // Reset auto next timer
-      clearTimeout(autoNext);
-      autoNext = setTimeout(() => {
+      // Timing configs
+      const timeRunning = 3000;
+      const timeAutoNext = 5000;
+
+      let runTimeout;
+      let autoNext = setTimeout(() => {
         nextBtn.click();
       }, timeAutoNext);
 
-      resetTimeAnimation();
-    }
+      // Next/prev button click events
+      nextBtn.onclick = () => showSlider("next");
+      prevBtn.onclick = () => showSlider("prev");
 
-    // Start animation on load
-    resetTimeAnimation();
-  </script>
+      // Reset progress bar animation
+      function resetTimeAnimation() {
+        runningTime.style.animation = "none";
+        runningTime.offsetHeight; // trigger reflow
+        runningTime.style.animation = "runningTime 7s linear 1 forwards";
+      }
+
+      // Handle carousel slide logic
+      function showSlider(direction) {
+        const sliderItems = list.querySelectorAll(
+          ".carousel__header .list .item"
+        );
+
+        if (direction === "next") {
+          list.appendChild(sliderItems[0]); // move first to last
+          carousel.classList.add("next");
+        } else {
+          list.prepend(sliderItems[sliderItems.length - 1]); // move last to first
+          carousel.classList.add("prev");
+        }
+
+        // Remove animation class after slide transition
+        clearTimeout(runTimeout);
+        runTimeout = setTimeout(() => {
+          carousel.classList.remove("next");
+          carousel.classList.remove("prev");
+        }, timeRunning);
+
+        // Reset auto next timer
+        clearTimeout(autoNext);
+        autoNext = setTimeout(() => {
+          nextBtn.click();
+        }, timeAutoNext);
+
+        resetTimeAnimation();
+      }
+
+      // Start animation on load
+      resetTimeAnimation();
+    </script>
+  </div>
 </div>
