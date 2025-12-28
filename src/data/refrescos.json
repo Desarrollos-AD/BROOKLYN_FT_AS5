@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "titulo": "Coca-Cola",
+    "descripcion": "Refrescante bebida gaseosa de 355 ml para acompañar tus comidas favoritas.",
+    "precio": "$55.00",
+    "imagen": "/images/refrescos/coca.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522b171dc8c-8826-4d21-bdb3-11cdc73f0e28%2522%252C%2522itemUuid%2522%253A%2522be8d3aea-9127-4405-a7cc-eadecb3032e5%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 2,
+    "titulo": "Coca-Cola Light",
+    "descripcion": "Refrescante bebida gaseosa de 355 ml para acompañar tus comidas favoritas.",
+    "precio": "$55.00",
+    "imagen": "/images/refrescos/coca.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522b171dc8c-8826-4d21-bdb3-11cdc73f0e28%2522%252C%2522itemUuid%2522%253A%25225aed715c-39ca-495f-807b-f554dbc756fc%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 3,
+    "titulo": "Sprite",
+    "descripcion": "Refrescante bebida gaseosa de 355 ml para acompañar tus comidas favoritas.",
+    "precio": "$55.00",
+    "imagen": "/images/refrescos/sprite.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522b171dc8c-8826-4d21-bdb3-11cdc73f0e28%2522%252C%2522itemUuid%2522%253A%2522170771b1-f1d9-4b09-9d32-9f01112b9fcf%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 4,
+    "titulo": "Sidra",
+    "descripcion": "Refrescante bebida gaseosa de 355 ml para acompañar tus comidas favoritas.",
+    "precio": "$55.00",
+    "imagen": "/images/refrescos/sidra.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522b171dc8c-8826-4d21-bdb3-11cdc73f0e28%2522%252C%2522itemUuid%2522%253A%25229276a7d4-c6a6-4ee8-bf1b-bbdaa5bb1b8a%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 5,
+    "titulo": "Fanta",
+    "descripcion": "Refrescante bebida gaseosa de 355 ml para acompañar tus comidas favoritas.",
+    "precio": "$55.00",
+    "imagen": "/images/refrescos/fanta.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522b171dc8c-8826-4d21-bdb3-11cdc73f0e28%2522%252C%2522itemUuid%2522%253A%2522bf6fd8d5-1934-4174-804d-2faa3633611d%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  }
+]

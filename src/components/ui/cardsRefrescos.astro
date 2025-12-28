@@ -1,0 +1,43 @@
+---
+import refrescos from "../../data/refrescos.json";
+---
+
+<div class="tarjetas">
+  {refrescos.map((refresco) => (
+    <div class="tarjeta" key={refresco.id}>
+      <div class="contenedor">
+
+        <div class="tarjeta__titulo">
+          <h4>{refresco.titulo}</h4>
+        </div>
+
+        <div class="tarjeta__img">
+          <img
+            src={refresco.imagen}
+            alt={refresco.titulo}
+            loading="lazy"
+          />
+        </div>
+
+        <div class="tarjeta__descripcion">
+          <p>{refresco.descripcion}</p>
+        </div>
+
+        <div class="btn__amarillo">
+          {refresco.enlace ? (
+            <a
+              href={refresco.enlace}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {refresco.precio}
+            </a>
+          ) : (
+            <span>{refresco.precio}</span>
+          )}
+        </div>
+
+      </div>
+    </div>
+  ))}
+</div>

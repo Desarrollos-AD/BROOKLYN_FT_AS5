@@ -1,0 +1,43 @@
+---
+import hamburguesas from "../../data/hamburguesas.json";
+---
+
+<div class="tarjetas">
+  {hamburguesas.map((hamburguesa) => (
+    <div class="tarjeta" key={hamburguesa.id}>
+      <div class="contenedor">
+
+        <div class="tarjeta__titulo">
+          <h4>{hamburguesa.titulo}</h4>
+        </div>
+
+        <div class="tarjeta__img">
+          <img
+            src={hamburguesa.imagen}
+            alt={hamburguesa.titulo}
+            loading="lazy"
+          />
+        </div>
+
+        <div class="tarjeta__descripcion">
+          <p>{hamburguesa.descripcion}</p>
+        </div>
+
+        <div class="btn__amarillo">
+          {hamburguesa.enlace ? (
+            <a
+              href={hamburguesa.enlace}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {hamburguesa.precio}
+            </a>
+          ) : (
+            <span>{hamburguesa.precio}</span>
+          )}
+        </div>
+
+      </div>
+    </div>
+  ))}
+</div>
