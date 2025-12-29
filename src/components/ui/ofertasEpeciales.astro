@@ -4,9 +4,12 @@
       <div class="ofertas__post--contenido">
         <h2>Ofertas que dan hambre… y ganas de volver todos los días.</h2>
         <p>
-          En Brooklyn Burgers siempre hay una razón para consentirte. Descubre nuestras promociones diarias, combos especiales y descuentos que cambian constantemente para sorprenderte con nuevos sabores y precios irresistibles.
-
-Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una oportunidad diferente para disfrutar más… gastando menos.
+          En Brooklyn Burgers siempre hay una razón para consentirte. Descubre
+          nuestras promociones diarias, combos especiales y descuentos que
+          cambian constantemente para sorprenderte con nuevos sabores y precios
+          irresistibles. Desde hamburguesas premium hasta acompañamientos y
+          bebidas, cada día trae una oportunidad diferente para disfrutar más…
+          gastando menos.
         </p>
       </div>
       <div class="ofertas__post--imagens">
@@ -136,7 +139,7 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
                 clip-rule="evenodd"></path>
             </svg>
           </kbd>
-          <p>para navegar </p>
+          <p>para navegar</p>
         </div>
       </section>
     </div>
@@ -181,7 +184,7 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
     const PRODUCTS_DATA = [
       {
         id: 1,
-        imageSrc: "https://picsum.photos/id/3/600/400",
+        imageSrc: "promo_1.jpg",
         name: "PURSHE Mini Projector, Portable HD Display for Home Cinema & Outdoor Movies",
         rating: 4.3,
         reviews: 61,
@@ -193,14 +196,10 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
           iconSvg: ICONS.tv,
         },
         featured: false,
-        actionButtons: [
-          { label: ICONS.heart, aria: "Add to favorites" },
-          { label: ICONS.eye, aria: "View details" },
-        ],
       },
       {
         id: 2,
-        imageSrc: "https://picsum.photos/id/96/600/400",
+        imageSrc: "promo_2.jpg",
         name: "XBOX Wireless Controller - Electric Volt Special Edition with Textured Grips",
         rating: 4.8,
         reviews: 1205,
@@ -208,14 +207,10 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
         price: "$59.99",
         category: { name: "Gaming", class: "gaming", iconSvg: ICONS.gamepad },
         featured: true,
-        actionButtons: [
-          { label: ICONS.heart, aria: "Add to favorites" },
-          { label: ICONS.eye, aria: "View details" },
-        ],
       },
       {
         id: 3,
-        imageSrc: "https://picsum.photos/id/250/600/400",
+        imageSrc: "promo_3.jpg",
         name: "Polaroid Now i-Type Instant Camera - Retro Blue Design, Autofocus",
         rating: 4.5,
         reviews: 350,
@@ -227,14 +222,10 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
           iconSvg: ICONS.camera,
         },
         featured: false,
-        actionButtons: [
-          { label: ICONS.heart, aria: "Add to favorites" },
-          { label: ICONS.eye, aria: "View details" },
-        ],
       },
       {
         id: 4,
-        imageSrc: "https://picsum.photos/id/160/600/400",
+        imageSrc: "promo_4.jpg",
         name: "FitVerse Smart Watch Pro - Advanced Health & Fitness Tracker with GPS",
         rating: 4.6,
         reviews: 890,
@@ -246,14 +237,10 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
           iconSvg: ICONS.watch,
         },
         featured: false,
-        actionButtons: [
-          { label: ICONS.heart, aria: "Add to favorites" },
-          { label: ICONS.eye, aria: "View details" },
-        ],
       },
       {
         id: 5,
-        imageSrc: "https://picsum.photos/id/127/600/400",
+        imageSrc: "promo_5.jpg",
         name: "AuraSound Noise Cancelling Over-Ear Headphones - Onyx Black, Hi-Fi Audio",
         rating: 4.9,
         reviews: 2100,
@@ -261,10 +248,17 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
         price: "$199.00",
         category: { name: "Audio", class: "audio", iconSvg: ICONS.headphones },
         featured: true,
-        actionButtons: [
-          { label: ICONS.heart, aria: "Add to favorites" },
-          { label: ICONS.eye, aria: "View details" },
-        ],
+      },
+      {
+        id: 6,
+        imageSrc: "promo_6.jpg",
+        name: "AuraSound Noise Cancelling Over-Ear Headphones - Onyx Black, Hi-Fi Audio",
+        rating: 4.9,
+        reviews: 2100,
+        sku: "AURAHDP005",
+        price: "$199.00",
+        category: { name: "Audio", class: "audio", iconSvg: ICONS.headphones },
+        featured: true,
       },
     ];
 
@@ -420,37 +414,10 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
           cardEl.setAttribute("aria-labelledby", `product-tab-${product.id}`);
           cardEl.setAttribute("tabindex", "-1");
 
-          const featuredBadgeHTML = product.featured
-            ? `<div class="card__featured-badge" aria-hidden="true">${ICONS.star} FEATURED</div>`
-            : "";
-
-          const actionButtonsHTML = product.actionButtons
-            .map(
-              (btn) =>
-                `<button type="button" class="card__image-action-btn" aria-label="${btn.aria}">${btn.label}</button>`
-            )
-            .join("");
-
           cardEl.innerHTML = `
-                    
-                    ${featuredBadgeHTML}
-                    <h4>Burger</h4>
-                     <div class="tarjeta__img">
-                        <img src="../../../public/images/brooklyn.jpg" alt="${product.name}" class="card__product-image" loading="lazy" fetchpriority="${index < 2 ? "high" : "auto"}">
+                     <div>
+                        <img src="/images/${product.imageSrc}" alt="${product.name}" class="card__product-image" loading="lazy" fetchpriority="${index < 2 ? "high" : "auto"}">
                     </div>
-                     <div class="tarjeta__descripcion">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem
-          voluptates, temporibus eum animi quisquam!
-        </p>
-      </div>
-                    <div class="card__rating-reviews" aria-label="Rating: ${product.rating.toFixed(1)} out of 5 stars, ${product.reviews.toLocaleString()} reviews.">
-                        <span class="card__stars" aria-hidden="true">${Utils.getStarRatingHTML(product.rating)}</span>
-                        <span aria-hidden="true">${product.rating.toFixed(1)}</span>
-                    </div>
-                    <button type="button" class="btn__amarillo">
-                        ${product.price}
-                    </button>
                 `;
           fragment.appendChild(cardEl);
         });
@@ -717,47 +684,7 @@ Desde hamburguesas premium hasta acompañamientos y bebidas, cada día trae una 
         this.update(false);
       },
 
-      handleTouchStart(e) {
-        if (STATE.isAnimating) return;
-        STATE.isInteracting = true;
-        STATE.touchData.isDragging = true;
-        STATE.touchData.startX = e.touches[0].clientX;
-        STATE.touchData.currentX = STATE.touchData.startX;
-        STATE.touchData.startTime = Date.now();
-        DOM.cardsWrapper.style.transitionProperty = "none";
-      },
-
-      handleTouchMove(e) {
-        if (!STATE.touchData.isDragging || STATE.isAnimating) return;
-        STATE.touchData.currentX = e.touches[0].clientX;
-        const diffX = STATE.touchData.currentX - STATE.touchData.startX;
-
-        if (Math.abs(diffX) > 10) {
-          if (e.cancelable) e.preventDefault();
-        }
-        this.update(false, diffX * CONFIG.touchMovementScaleFactor);
-      },
-
-      handleTouchEnd() {
-        if (!STATE.touchData.isDragging) return;
-        STATE.touchData.isDragging = false;
-        STATE.isInteracting = false;
-
-        const diffX = STATE.touchData.currentX - STATE.touchData.startX;
-        const elapsedTime = Date.now() - STATE.touchData.startTime;
-        const velocity = Math.abs(diffX / elapsedTime);
-
-        DOM.cardsWrapper.style.transitionProperty = "";
-
-        if (
-          Math.abs(diffX) > CONFIG.swipeThreshold ||
-          (velocity > 0.3 && elapsedTime < 300 && Math.abs(diffX) > 10)
-        ) {
-          diffX < 0 ? this.next() : this.prev();
-        } else {
-          this.update();
-        }
-      },
+    
     };
 
     if (document.readyState === "loading") {

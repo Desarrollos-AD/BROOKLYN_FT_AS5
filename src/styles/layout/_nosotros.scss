@@ -6,13 +6,31 @@
   &__contenido {
     display: flex;
     height: 80vh;
+    margin-top: 10rem;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include mx.tablet-grande {
+      flex-direction: row;
+    }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
 
     &--figura {
-      background-color: aqua;
-      width: 200rem;
-      height: 75%;
-      margin-left: 70rem;
-      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      video {
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
     }
     &--info {
       h1 {
@@ -28,15 +46,18 @@
 
 .historia {
   &__contenido {
-    display: flex;
-    flex-direction: column;
+    @include mx.grid(1, 2rem);
     margin: 2.5rem 0;
-    gap: 2rem;
+    flex-direction: row-reverse;
 
     @include mx.telefono-grande {
-      flex-direction: row;
+      @include mx.grid(2, 2rem);
+    }
+    &--img {
     }
 
+    &--infO {
+    }
     h2 {
       color: v.$blanco;
       font-size: clamp(3rem, 4.5vw, 6rem);
@@ -53,6 +74,20 @@
 .barraHistoria {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  margin: 3rem 0;
+
+  .barraHistoria__info:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  @include mx.telefono-grande {
+    flex-direction: row;
+
+    .barraHistoria__info:nth-child(2) {
+      flex-direction: row;
+    }
+  }
   &__info {
     &--img {
       background-color: v.$blanco;

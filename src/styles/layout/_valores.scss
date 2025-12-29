@@ -57,12 +57,15 @@
       height: 40%;
     }
     p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      color: #636363;
+      margin: 0 auto;
       width: 80%;
-      color: v.$gris_claro;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+
     }
   }
 }
