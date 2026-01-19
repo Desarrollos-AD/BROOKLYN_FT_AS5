@@ -1,162 +1,169 @@
 [
   {
     "id": 1,
-    "titulo": "Alitas",
-    "descripcion": "10 piezas, se acompañan con aderezo ranch y papas gajo.",
-    "precio": "$185.00",
-    "imagen_sf": "/images/producto1.jpg",
-    "imagen": "/images/producto1.jpg"
-  },
-  {
-    "id": 2,
-    "titulo": "Boneless",
-    "descripcion": "10 piezas, se acompañan con aderezo ranch y papas gajo.",
-    "precio": "$185.00",
-    "imagen_sf": "/images/producto2.jpg",
-    "imagen": "/images/producto2.jpg"
-  },
-  {
-    "id": 3,
-    "titulo": "Aros de Cebolla",
-    "descripcion": "15 piezas, se acompañan con aderezo ranch.",
-    "precio": "$128.00",
-    "imagen_sf": "/images/producto3.jpg",
-    "imagen": "/images/producto3.jpg"
-  },
-  {
-    "id": 4,
-    "titulo": "Papas a la Francesa",
-    "descripcion": "400 gm, se acompañan con aderezo ranch.",
-    "precio": "$122.00",
-    "imagen_sf": "/images/producto4.jpg",
-    "imagen": "/images/producto4.jpg"
-  },
-  {
-    "id": 5,
-    "titulo": "Papas Gajo",
-    "descripcion": "400 gm, se acompañan con aderezo ranch.",
-    "precio": "$122.00",
-    "imagen_sf": "/images/producto5.jpg",
-    "imagen": "/images/producto5.jpg"
-  },
-  {
-    "id": 6,
-    "titulo": "Buffalo Fries",
-    "descripcion": "Papas a la francesa con queso Cheddar, ranch y boneless con salsa Buffalo.",
-    "precio": "$230.00",
-    "imagen_sf": "/images/producto6.jpg",
-    "imagen": "/images/producto6.jpg"
-  },
-  {
-    "id": 7,
-    "titulo": "Sonora Fries",
-    "descripcion": "Papas a la francesa con arrachera, queso mozzarella, queso Cheddar, tocino y cilantro.",
-    "precio": "$230.00",
-    "imagen_sf": "/images/producto7.jpg",
-    "imagen": "/images/producto7.jpg"
-  },
-  {
-    "id": 8,
-    "titulo": "Burger Potatoes",
-    "descripcion": "Papas crisscut McCain con queso Cheddar, carne de burger, pico de gallo y aderezo de la casa.",
-    "precio": "$230.00",
-    "imagen_sf": "/images/producto8.jpg",
-    "imagen": "/images/producto8.jpg"
-  },
-  {
-    "id": 9,
     "titulo": "Lord",
     "descripcion": "250 gramos de carne de la casa con aros de cebolla, salsa BBQ, aderezo de la casa, tocino y vegetales. Acompañadas de papas gajo.",
     "precio": "$184.00",
-    "imagen_sf": "/images/producto9.jpg",
-    "imagen": "/images/producto9.jpg"
+    "imagen_sf": "/images/header/lord_sf.png",
+    "imagen": "/images/header/lord.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%252271c49450-edac-4258-a846-1f50080f4909%2522%252C%2522itemUuid%2522%253A%252206892400-3608-491b-aebd-953aaaa1ac54%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
   },
   {
-    "id": 10,
+    "id": 2,
     "titulo": "Hawaiian",
     "descripcion": "250 gramos de carne de la casa con piña asada, champiñones, aderezo y tocino. Acompañadas de papas gajo.",
     "precio": "$184.00",
-    "imagen_sf": "/images/producto10.jpg",
-    "imagen": "/images/producto10.jpg"
+    "imagen_sf": "/images/header/hawaiian_sf.png",
+    "imagen": "/images/header/hawaiian.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%252271c49450-edac-4258-a846-1f50080f4909%2522%252C%2522itemUuid%2522%253A%2522c3c41f25-a687-49ba-b291-e43b576ef23a%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
   },
   {
-    "id": 11,
+    "id": 3,
     "titulo": "Sliders",
     "descripcion": "1/4 de libra de carne de la casa, base de cebolla caramelizada, mezcla de quesos y tocino. Acompañadas de papas gajo.",
     "precio": "$138.00",
-    "imagen_sf": "/images/producto11.jpg",
-    "imagen": "/images/producto11.jpg"
+    "imagen_sf": "/images/header/sliders_sf.png",
+    "imagen": "/images/header/sliders.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%25224e3c8a55-be96-453c-b3f4-b697ba223ada%2522%252C%2522itemUuid%2522%253A%2522756c6d1a-0a7a-4f4b-9854-9cc425970825%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
   },
   {
-    "id": 12,
+    "id": 4,
     "titulo": "McAllen",
     "descripcion": "250 gramos de carne de la casa, base de vegetales, aderezo y tocino. Acompañadas de papas gajo.",
     "precio": "$157.00",
-    "imagen_sf": "/images/producto12.jpg",
-    "imagen": "/images/producto12.jpg"
-  },
+    "imagen_sf": "/images/header/mcallen_sf.png",
+    "imagen": "/images/header/mcallen.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%25224e3c8a55-be96-453c-b3f4-b697ba223ada%2522%252C%2522itemUuid%2522%253A%2522fec177f6-9645-432f-b666-00caecebd87c%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+    },
   {
-    "id": 13,
+    "id": 5,
     "titulo": "Brooklyn",
     "descripcion": "250 gm de carne de la casa con champiñones salteados con mantequilla, tocino ahumado con nogal, queso Monterrey Jack y Cheddar madurado. Acompañadas de papas gajo.",
     "precio": "$261.00",
-    "imagen_sf": "/images/producto13.jpg",
-    "imagen": "/images/producto13.jpg"
+    "imagen_sf": "/images/header/brooklyn_sf.png",
+    "imagen": "/images/header/brooklyn.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522ad820cbe-fc38-40a1-b1fb-4918cfe07124%2522%252C%2522itemUuid%2522%253A%25221b0744eb-6e13-4844-ba27-28456ccec429%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
   },
   {
-    "id": 14,
+    "id": 6,
     "titulo": "Double Cheese",
     "descripcion": "250 gramos de carne de la casa con mezcla de quesos Monterrey Jack y Cheddar madurado con crujientes de tocino. Acompañadas de papas gajo.",
     "precio": "$205.00",
-    "imagen_sf": "/images/producto14.jpg",
-    "imagen": "/images/producto14.jpg"
+    "imagen_sf": "/images/header/double_cheese_sf.png",
+    "imagen": "/images/header/double_cheese.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522ad820cbe-fc38-40a1-b1fb-4918cfe07124%2522%252C%2522itemUuid%2522%253A%252230848eba-a901-407f-b57f-9b89e795bcfe%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  },
+  {
+    "id": 7,
+    "titulo": "Babies Brooklyn",
+    "descripcion": "2 Piezas de hamburguesas de 1/4 de libra, vegetales, queso y tocino. La versión más pequeña de nuestras burgers. La única de nuestras burgers que se acompaña con papas a la francesa.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/header/babies_sf.png",
+    "imagen": "/images/header/babies.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522ad820cbe-fc38-40a1-b1fb-4918cfe07124%2522%252C%2522itemUuid%2522%253A%252274c0eae2-bd44-4eaa-8359-8966f94ed687%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  },
+  {
+    "id": 8,
+    "titulo": "Sonora",
+    "descripcion": "250 gramos de carne de la casa, arrachera gratinada, tocino, guacamole y cebolla asada. Acompañadas de papas gajo.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/header/sonora_sf.png",
+    "imagen": "/images/header/sonora.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%25225513314a-e413-4c3f-bc54-90d18a7fa906%2522%252C%2522itemUuid%2522%253A%2522cf2f8319-7c7c-468c-a389-48e06cf05a96%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  },
+  {
+    "id": 9,
+    "titulo": "Mexicana",
+    "descripcion": "250 gramos de carne de la casa, guacamole, chorizo gratinado, aderezo de la casa y tocino. Acompañadas de papas gajo.",
+    "precio": "$210.00",
+    "imagen_sf": "/images/header/mexicana_sf.png",
+    "imagen": "/images/header/mexicana.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%25225513314a-e413-4c3f-bc54-90d18a7fa906%2522%252C%2522itemUuid%2522%253A%2522ea3c333a-2f25-46aa-a379-2a434339b401%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  },
+  {
+    "id": 10,
+    "titulo": "Sin Nombre",
+    "descripcion": "250 gramos de carne de la casa, guacamole, pastor gratinado, champiñones, piña asada y vegetales. Acompañadas de papas gajo.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/header/sin_nombre_sf.png",
+    "imagen": "/images/header/sin_nombre.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%25225513314a-e413-4c3f-bc54-90d18a7fa906%2522%252C%2522itemUuid%2522%253A%252235457f89-84b4-4a2b-bb61-07551a178d55%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  },
+  {
+    "id": 11,
+    "titulo": "Belly",
+    "descripcion": "250 gramos de carne de la casa, pork belly, pico de gallo, guacamole y tocino. Acompañadas de papas gajo.",
+    "precio": "$231.00",
+    "imagen_sf": "/images/header/belly_sf.png",
+    "imagen": "/images/header/belly.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522869fac5d-bd81-43f4-b376-dfd8cc9de65f%2522%252C%2522itemUuid%2522%253A%2522f3706f4f-b637-40bc-8666-e8dd13522b8b%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  },
+  {
+    "id": 12,
+    "titulo": "Buffalo",
+    "descripcion": "250 gramos de carne de la casa, boneless de Buffalo, chips de tortilla de maíz, queso azul y tocino. Acompañadas de papas gajo.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/header/buffalo_sf.png",
+    "imagen": "/images/header/buffalo.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522869fac5d-bd81-43f4-b376-dfd8cc9de65f%2522%252C%2522itemUuid%2522%253A%2522456dde07-0e9a-4738-ab25-6118baa435cd%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  },
+  {
+    "id": 13,
+    "titulo": "Francesa",
+    "descripcion": "250 gramos de carne de la casa, base de vegetales, papas a la francesa, mezcla de queso mozzarella, Cheddar y tocino. Acompañadas de papas gajo.",
+    "precio": "$196.00",
+    "imagen_sf": "/images/header/francesa_sf.png",
+    "imagen": "/images/header/francesa.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522869fac5d-bd81-43f4-b376-dfd8cc9de65f%2522%252C%2522itemUuid%2522%253A%25229f63bb47-8b3f-4fd2-8efb-dcdee3dfcd5d%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  },
+  {
+    "id": 14,
+    "titulo": "Jelly",
+    "descripcion": "250 gm de carne de la casa, espinacas baby, gratinado de mozzarella, acremado de queso de cabra, mermelada de fresa con un toque picante y doble tocino. Acompañadas de papas gajo.",
+    "precio": "$205.00",
+    "imagen_sf": "/images/header/jelly_sf.png",
+    "imagen": "/images/header/jelly.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522869fac5d-bd81-43f4-b376-dfd8cc9de65f%2522%252C%2522itemUuid%2522%253A%2522d8168b11-a3ef-4fbb-8e33-d1fb76b4d4f6%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
   },
   {
     "id": 15,
-    "titulo": "Ranch",
-    "descripcion": "Salsa cremosa a base de mayonesa, suero de leche, cebollín y especias.",
-    "precio": "$22.00",
-    "imagen_sf": "/images/producto15.jpg",
-    "imagen": "/images/producto15.jpg"
+    "titulo": "No Mms",
+    "descripcion": "Hamburguesa triple carne (750 gramos), champiñones caramelizados, queso mozzarella, tocino, espinacas y pimientos. Acompañadas de papas gajo.",
+    "precio": "$296.00",
+    "imagen_sf": "/images/header/no_mms_sf.png",
+    "imagen": "/images/header/no_mms.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%25221d94586d-bba6-4029-be9e-ae5c8871aa9e%2522%252C%2522itemUuid%2522%253A%2522505daf23-154b-4a90-aa1d-030e50f3e962%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
   },
   {
     "id": 16,
-    "titulo": "Horchata de Mango",
-    "descripcion": "Horchata de mango.",
-    "precio": "$80.00",
-    "imagen_sf": "/images/producto16.jpg",
-    "imagen": "/images/producto16.jpg"
+    "titulo": "Montana",
+    "descripcion": "Doble carne (500 gramos), mozzarella gratinado, tocino y vegetales. Acompañadas de papas gajo.",
+    "precio": "$240.00",
+    "imagen_sf": "/images/header/montana_sf.png",
+    "imagen": "/images/header/montana.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%25221d94586d-bba6-4029-be9e-ae5c8871aa9e%2522%252C%2522itemUuid%2522%253A%252221447631-99f4-4937-8460-5031cc4e44e2%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
   },
   {
     "id": 17,
-    "titulo": "Cheese Fingers",
-    "descripcion": "Cheese fingers.",
-    "precio": "$150.00",
-    "imagen_sf": "/images/producto17.jpg",
-    "imagen": "/images/producto17.jpg"
-  },
-  {
-    "id": 18,
-    "titulo": "Jalapeño Poppers",
-    "descripcion": "Jalapeño poppers.",
-    "precio": "$126.00",
-    "imagen_sf": "/images/producto18.jpg",
-    "imagen": "/images/producto18.jpg"
-  },
-  {
-    "id": 19,
-    "titulo": "Sweet Potato Fries",
-    "descripcion": "Sweet potato fries.",
-    "precio": "$173.00",
-    "imagen_sf": "/images/producto19.jpg",
-    "imagen": "/images/producto19.jpg"
-  },
-  {
-    "id": 20,
-    "titulo": "Quesitos Mexicanos Picantes",
-    "descripcion": "Quesitos Mexicanos picantes.",
-    "precio": "$115.00",
-    "imagen_sf": "/images/producto20.jpg",
-    "imagen": "/images/producto20.jpg"
+    "titulo": "Yellow",
+    "descripcion": "Doble carne (500 gramos), bañada en nuestra mezcla de mozzarella con Cheddar y tocino crujiente. Acompañadas de papas gajo.",
+    "precio": "$245.00",
+    "imagen_sf": "/images/header/yellow_sf.png",
+    "imagen": "/images/header/yellow.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%25221d94586d-bba6-4029-be9e-ae5c8871aa9e%2522%252C%2522itemUuid%2522%253A%2522ef47a222-5e48-4648-9182-b2740b7e6da9%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
   }
 ]

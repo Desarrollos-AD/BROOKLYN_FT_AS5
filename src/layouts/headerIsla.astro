@@ -1,5 +1,6 @@
 ---
 import Nav from "../components/islands/navIsla.astro";
+import productos from "../data/menu.json";
 ---
 
 <Nav />
@@ -7,203 +8,27 @@ import Nav from "../components/islands/navIsla.astro";
 <div class="carousel__header">
   <!-- Carousel Items Wrapper -->
   <div class="list">
-    <!-- Carousel Item 1 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/babies.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">Sin nombre</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
+    {
+      productos.map((producto) => (
+        <div
+          class="item"
+          style={`background-image: url(${producto.imagen})`}
+        >
+          <div class="content">
+            <div class="name">Menú Brooklyn</div>
+            <div class="title">{producto.titulo}</div>
+            <div class="item__descripcion">
+              <div class="des">
+              {producto.descripcion}
+              </div>
+              <a href={producto.link} class="btn__verde btn">
+                Pidela en Uber Eats
+              </a>
+            </div>
           </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
         </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 2 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/brooklyn.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 3 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/buffalo.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 4 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 5 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 6 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 7 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 8 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">La mexicana</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 9 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">SLIDER</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 10 -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_2.png)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">SLIDER</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel Item 11 (Repeated Parrot) -->
-    <div
-      class="item"
-      style="background-image: url(/public/images/header_1.jpg)"
-    >
-      <div class="content">
-        <div class="name">Menú Brooklyn</div>
-        <div class="title">SLIDER</div>
-        <div class="item__descripcion">
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            culpa similique consequuntur, reprehenderit dicta repudiandae.
-          </div>
-          <a href="" class="btn__verde btn">Pidela en Uber Eats</a>
-        </div>
-      </div>
-    </div>
+      ))
+    }
   </div>
   <!-- End of .list -->
 
@@ -262,7 +87,7 @@ import Nav from "../components/islands/navIsla.astro";
     // Handle carousel slide logic
     function showSlider(direction) {
       const sliderItems = list.querySelectorAll(
-        ".carousel__header .list .item"
+        ".carousel__header .list .item",
       );
 
       if (direction === "next") {

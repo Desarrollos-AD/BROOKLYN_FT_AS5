@@ -1,179 +1,175 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-  <div class="carousel">
-  <div class="carousel__control"></div>
-  <div class="carousel__stage">
-    <div class="spinner spinner--left">
-      <!-- Repite por cada cara del carrusel -->
-      <div class="spinner__face js-active" data-bg="#27323c">
-        <div class="content" data-type="iceland">
-          <div class="content__left">
-            <h1>ICELAND<br><span>EUROPE</span></h1>
-          </div>
-          <div class="content__right">
-            <div class="content__main">
-              <p>Texto descriptivo de ejemplo...</p>
+  <head> </head>
+  <body> -->
+<section class="ubicaciones">
+    <div class="carousel">
+      <div class="carousel__control"></div>
+      <div class="carousel__stage">
+        <div class="spinner spinner--left">
+          <!-- Repite por cada cara del carrusel -->
+          <div class="spinner__face js-active" data-bg="#27323c">
+            <div class="content" data-type="iceland">
+              <div class="content__left">
+                <h1>ICELAND<br /><span>EUROPE</span></h1>
+              </div>
+              <div class="content__right">
+                <div class="content__main">
+                  <p>Texto descriptivo de ejemplo...</p>
+                </div>
+                <h3 class="content__index">01</h3>
+              </div>
             </div>
-            <h3 class="content__index">01</h3>
           </div>
-        </div>
-      </div>
-      <!-- Añade más .spinner__face aquí -->
-       <div class="spinner__face js-active" data-bg="#27323c">
-        <div class="content" data-type="iceland">
-          <div class="content__left">
-            <h1>ICELAND<br><span>EUROPE</span></h1>
-          </div>
-          <div class="content__right">
-            <div class="content__main">
-              <p>Texto descriptivo de ejemplo...</p>
+          <!-- Añade más .spinner__face aquí -->
+          <div class="spinner__face js-active" data-bg="#27323c">
+            <div class="content" data-type="iceland">
+              <div class="content__left">
+                <h1>ICELAND<br /><span>EUROPE</span></h1>
+              </div>
+              <div class="content__right">
+                <div class="content__main">
+                  <p>Texto descriptivo de ejemplo...</p>
+                </div>
+                <h3 class="content__index">01</h3>
+              </div>
             </div>
-            <h3 class="content__index">01</h3>
           </div>
-        </div>
-      </div>
 
-      <div class="spinner__face js-active" data-bg="#27323c">
-        <div class="content" data-type="iceland">
-          <div class="content__left">
-            <h1>ICELAND<br><span>EUROPE</span></h1>
-          </div>
-          <div class="content__right">
-            <div class="content__main">
-              <p>Texto descriptivo de ejemplo...</p>
+          <div class="spinner__face js-active" data-bg="#27323c">
+            <div class="content" data-type="iceland">
+              <div class="content__left">
+                <h1>ICELAND<br /><span>EUROPE</span></h1>
+              </div>
+              <div class="content__right">
+                <div class="content__main">
+                  <p>Texto descriptivo de ejemplo...</p>
+                </div>
+                <h3 class="content__index">01</h3>
+              </div>
             </div>
-            <h3 class="content__index">01</h3>
           </div>
         </div>
       </div>
-    </div>
   </div>
-</div>
-    <!--  Poor man's preloader -->
-     <div style="height: 0; width: 0; overflow: hidden">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg" />
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/canada.jpg"
-      /><img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg"
-      /><img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg"
-      /><img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg"
-      />
-    </div>
-    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <!--  Poor man's preloader -->
+  <div style="height: 0; width: 0; overflow: hidden">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg" />
+    <img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/canada.jpg"
+    /><img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg"
+    /><img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg"
+    /><img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg"
+    />
+  </div>
+</section>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="js.js"></script> -->
-    <!-- <script src="app.js"></script> -->
-  </body>
-</html>
+<!-- <script src="app.js"></script> -->
+<!-- </body>
+</html> -->
 
 <script is:client="load">
   document.addEventListener("DOMContentLoaded", () => {
-  let activeIndex = 0;
-  let limit = 0;
-  let disabled = false;
+    let activeIndex = 0;
+    let limit = 0;
+    let disabled = false;
 
-  const SPIN_FORWARD_CLASS = "js-spin-fwd";
-  const SPIN_BACKWARD_CLASS = "js-spin-bwd";
-  const DISABLE_TRANSITIONS_CLASS = "js-transitions-disabled";
-  const SPIN_DUR = 1000;
+    const SPIN_FORWARD_CLASS = "js-spin-fwd";
+    const SPIN_BACKWARD_CLASS = "js-spin-bwd";
+    const DISABLE_TRANSITIONS_CLASS = "js-transitions-disabled";
+    const SPIN_DUR = 1000;
 
-  const stage = document.querySelector(".carousel__stage");
-  const controlContainer = document.querySelector(".carousel__control");
-  const spinnerLeft = document.querySelector(".spinner--left");
+    const stage = document.querySelector(".carousel__stage");
+    const controlContainer = document.querySelector(".carousel__control");
+    const spinnerLeft = document.querySelector(".spinner--left");
 
-  if (!spinnerLeft) {
-    console.error("No se encontró .spinner--left");
-    return;
-  }
+    if (!spinnerLeft) {
+      console.error("No se encontró .spinner--left");
+      return;
+    }
 
-  const faces = spinnerLeft.querySelectorAll(".spinner__face");
-  limit = faces.length;
+    const faces = spinnerLeft.querySelectorAll(".spinner__face");
+    limit = faces.length;
 
-  faces.forEach((face, i) => {
-    face.dataset.index = i;
-  });
-
-  /* 🔁 Clonar spinner */
-  const spinnerRight = spinnerLeft.cloneNode(true);
-  spinnerRight.classList.remove("spinner--left");
-  spinnerRight.classList.add("spinner--right");
-
-  spinnerLeft.parentElement.appendChild(spinnerRight);
-
-  /* 🎯 Controles */
-  for (let i = 0; i < limit; i++) {
-    const a = document.createElement("a");
-    a.href = "#";
-    a.dataset.index = i;
-    if (i === 0) a.classList.add("active");
-    controlContainer.appendChild(a);
-  }
-
-  const controls = controlContainer.querySelectorAll("a");
-
-  function spin(inc) {
-    if (disabled) return;
-
-    activeIndex += inc;
-    if (activeIndex >= limit) activeIndex = 0;
-    if (activeIndex < 0) activeIndex = limit - 1;
-
-    disabled = true;
-
-    document
-      .querySelectorAll(`.spinner__face[data-index="${activeIndex}"]`)
-      .forEach((el) => el.classList.add("js-next"));
-
-    stage.classList.add(inc > 0 ? SPIN_FORWARD_CLASS : SPIN_BACKWARD_CLASS);
-
-    controls.forEach((c) => c.classList.remove("active"));
-    controls[activeIndex].classList.add("active");
-
-    setTimeout(spinCallback, SPIN_DUR);
-  }
-
-  function spinCallback() {
-    document
-      .querySelectorAll(".js-active")
-      .forEach((el) => el.classList.remove("js-active"));
-
-    document.querySelectorAll(".js-next").forEach((el) => {
-      el.classList.remove("js-next");
-      el.classList.add("js-active");
-      el.parentElement.prepend(el);
+    faces.forEach((face, i) => {
+      face.dataset.index = i;
     });
 
-    stage.classList.add(DISABLE_TRANSITIONS_CLASS);
-    stage.classList.remove(SPIN_FORWARD_CLASS, SPIN_BACKWARD_CLASS);
+    /* 🔁 Clonar spinner */
+    const spinnerRight = spinnerLeft.cloneNode(true);
+    spinnerRight.classList.remove("spinner--left");
+    spinnerRight.classList.add("spinner--right");
 
-    setTimeout(() => {
-      stage.classList.remove(DISABLE_TRANSITIONS_CLASS);
-      disabled = false;
-    }, 100);
-  }
+    spinnerLeft.parentElement.appendChild(spinnerRight);
 
-  /* ⌨️ Teclado */
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowUp") spin(-1);
-    if (e.key === "ArrowDown") spin(1);
-  });
+    /* 🎯 Controles */
+    for (let i = 0; i < limit; i++) {
+      const a = document.createElement("a");
+      a.href = "#";
+      a.dataset.index = i;
+      if (i === 0) a.classList.add("active");
+      controlContainer.appendChild(a);
+    }
 
-  /* 🖱️ Click controles */
-  controls.forEach((ctrl) => {
-    ctrl.addEventListener("click", (e) => {
-      e.preventDefault();
-      spin(ctrl.dataset.index - activeIndex);
+    const controls = controlContainer.querySelectorAll("a");
+
+    function spin(inc) {
+      if (disabled) return;
+
+      activeIndex += inc;
+      if (activeIndex >= limit) activeIndex = 0;
+      if (activeIndex < 0) activeIndex = limit - 1;
+
+      disabled = true;
+
+      document
+        .querySelectorAll(`.spinner__face[data-index="${activeIndex}"]`)
+        .forEach((el) => el.classList.add("js-next"));
+
+      stage.classList.add(inc > 0 ? SPIN_FORWARD_CLASS : SPIN_BACKWARD_CLASS);
+
+      controls.forEach((c) => c.classList.remove("active"));
+      controls[activeIndex].classList.add("active");
+
+      setTimeout(spinCallback, SPIN_DUR);
+    }
+
+    function spinCallback() {
+      document
+        .querySelectorAll(".js-active")
+        .forEach((el) => el.classList.remove("js-active"));
+
+      document.querySelectorAll(".js-next").forEach((el) => {
+        el.classList.remove("js-next");
+        el.classList.add("js-active");
+        el.parentElement.prepend(el);
+      });
+
+      stage.classList.add(DISABLE_TRANSITIONS_CLASS);
+      stage.classList.remove(SPIN_FORWARD_CLASS, SPIN_BACKWARD_CLASS);
+
+      setTimeout(() => {
+        stage.classList.remove(DISABLE_TRANSITIONS_CLASS);
+        disabled = false;
+      }, 100);
+    }
+
+    /* ⌨️ Teclado */
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowUp") spin(-1);
+      if (e.key === "ArrowDown") spin(1);
+    });
+
+    /* 🖱️ Click controles */
+    controls.forEach((ctrl) => {
+      ctrl.addEventListener("click", (e) => {
+        e.preventDefault();
+        spin(ctrl.dataset.index - activeIndex);
+      });
     });
   });
-});
-
 </script>
