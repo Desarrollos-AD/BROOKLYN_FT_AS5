@@ -1,6 +1,6 @@
 ---
 import Nav from "../components/islands/navIsla.astro";
-import Menu from "../data/hamburguesas.json";
+import productos from "../data/menu.json";
 ---
 
 <Nav />
@@ -8,28 +8,21 @@ import Menu from "../data/hamburguesas.json";
 <div class="carousel__header">
   <!-- Carousel Items Wrapper -->
   <div class="list">
-    <!-- Carousel Item 1 -->
     {
-      Menu.map((item) => (
+      productos.map((producto) => (
         <div
           class="item"
-          style={`background-image: url(/images/header/${item.imagen})`}
+          style={`background-image: url(${producto.imagen})`}
         >
           <div class="content">
             <div class="name">Menú Brooklyn</div>
-
-            <div class="title">{item.titulo}</div>
-
+            <div class="title">{producto.titulo}</div>
             <div class="item__descripcion">
-              <div class="des">{item.descripcion}</div>
-
-              <a
-                href={item.enlace}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn__verde btn"
-              >
-                Pídela en Uber Eats
+              <div class="des">
+              {producto.descripcion}
+              </div>
+              <a href={producto.link} class="btn__verde btn">
+                Pidela en Uber Eats
               </a>
             </div>
           </div>
@@ -90,11 +83,11 @@ import Menu from "../data/hamburguesas.json";
         runningTime.style.animation = "runningTime 7s linear 1 forwards";
       }
 
-      // Handle carousel slide logic
-      function showSlider(direction) {
-        const sliderItems = list.querySelectorAll(
-          ".carousel__header .list .item"
-        );
+    // Handle carousel slide logic
+    function showSlider(direction) {
+      const sliderItems = list.querySelectorAll(
+        ".carousel__header .list .item",
+      );
 
         if (direction === "next") {
           list.appendChild(sliderItems[0]); // move first to last

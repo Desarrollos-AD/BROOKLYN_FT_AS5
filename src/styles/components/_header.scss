@@ -4,10 +4,14 @@
 /* --- Carousel --- */
 .carousel__header {
   width: 100vw;
-  height: 100vh;
   margin-top: -5rem;
   overflow: hidden;
   position: relative;
+  height: 85vh;
+
+  @include mx.tablet_pequena {
+    height: 100vh;
+  }
 }
 
 .carousel__header .list .item {
@@ -15,14 +19,15 @@
   position: absolute;
   top: 80%;
   transform: translateY(-70%);
-  left: 70%;
   border-radius: 2rem;
   background-position: center;
   background-size: cover;
   z-index: 100;
   transition: 1s;
+  left: 100%;
 
   @include mx.tablet_pequena {
+    left: 70%;
     box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 1);
     width: 18rem;
   }
@@ -41,7 +46,10 @@
 
 /* Extra items on right */
 .carousel__header .list .item:nth-child(3) {
-  left: 67%;
+  left: 100%;
+  @include mx.tablet_pequena {
+    left: 67%;
+  }
 }
 .carousel__header .list .item:nth-child(4) {
   left: calc(67% + 200px);
@@ -136,31 +144,46 @@
   }
 
   .name {
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: bold;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     position: absolute;
     top: 50%;
-    left: -3rem;
+    left: -5rem;
     transform: translateY(-50%) rotate(180deg);
     white-space: nowrap;
     color: v.$blanco;
     text-shadow: 3px 4px 4px v.$amarillo;
     z-index: 10;
 
+    @include mx.telefono_grande {
+      top: 30%;
+    }
+
     @include mx.tablet_pequena {
-      left: 3rem;
+      left: 5rem;
       top: 35%;
     }
   }
   &__descripcion {
-    margin-left: 4rem;
-    margin-top: 63rem;
+    margin-left: 0rem;
+    margin-top: 70rem;
     width: 100%;
 
+    @include mx.telefono_grande {
+      margin-left: 5rem;
+      margin-top: 63rem;
+    }
+
     @include mx.tablet_pequena {
-      margin-top: 75rem;
+      margin-left: 20rem;
+      margin-top: 63rem;
+      width: 100%;
+    }
+
+    @include mx.tablet_pequena {
+      margin-top: 44rem;
     }
   }
 
@@ -175,7 +198,12 @@
     transform: translateY(-80%);
     white-space: nowrap;
     z-index: 9;
-    left: 7rem;
+    left: 4rem;
+
+    @include mx.telefono_grande {
+      top: 17%;
+      left: 10rem;
+    }
 
     @include mx.tablet_pequena {
       top: 20%;
@@ -213,8 +241,8 @@
 /* --- Arrows --- */
 .arrows {
   position: absolute;
-  top: 90%;
-  right: 25%;
+  top: 74%;
+  right: 35%;
   display: flex;
   gap: 1rem;
   width: 100%;
@@ -222,6 +250,11 @@
   align-items: center;
   z-index: 100;
   margin: 0 auto;
+
+  @include mx.tablet_pequena {
+    top: 90%;
+    right: 25%;
+  }
 
   button {
     width: 50px;
@@ -267,10 +300,7 @@
   .list .item .content {
     left: 50px;
   }
-  .content .title,
-  .content .name {
-    font-size: 90px;
-  }
+
   .content .des {
     font-size: 16px;
   }
@@ -282,10 +312,6 @@
   }
   .list .item .content {
     top: 40%;
-  }
-  .content .title,
-  .content .name {
-    font-size: 55px;
   }
   .content .btn button {
     padding: 10px 15px;

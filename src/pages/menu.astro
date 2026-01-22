@@ -17,7 +17,7 @@ import productos from "../data/hamburguesas.json";
             <div class="product-img">
               <div class="product-img__item" id={`img${producto.id}`}>
                 <img
-                  src={`/images/header/${producto.imagen_sf}`}
+                  src={producto.imagen_sf}
                   alt={`Imagen ${producto.titulo}`}
                   class="product-img__img"
                   width="900"
@@ -71,7 +71,7 @@ import productos from "../data/hamburguesas.json";
 
                       <div class="product-slider__bottom">
                         <a
-                          href="https://www.ubereats.com"
+                          href={producto.link}
                           target="_blank"
                           rel="noopener noreferrer"
                           class="product-slider__cart"
