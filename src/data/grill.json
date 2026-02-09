@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "titulo": "Tacos al Pastor",
+    "descripcion": "Tortillas de harina.",
+    "precio": "$75.00",
+    "imagen": "/images/grill/tacos.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%252201df24de-3a29-4c57-a6c7-d553a0687e46%2522%252C%2522itemUuid%2522%253A%2522f6084f06-e3be-466e-851d-7d9ef135dff1%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 2,
+    "titulo": "Tacos de Arrachera",
+    "descripcion": "Tortillas de harina.",
+    "precio": "$75.00",
+    "imagen": "/images/grill/tacos.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%252201df24de-3a29-4c57-a6c7-d553a0687e46%2522%252C%2522itemUuid%2522%253A%2522729107d2-513b-4d1c-9c4d-ed067f56af95%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 3,
+    "titulo": "Burritos de Pastor",
+    "descripcion": "Tortilla de harina rellena de carne de pastor, frijoles, arroz y salsa, todo envuelto y listo para disfrutar.",
+    "precio": "$160.00",
+    "imagen": "/images/grill/burritos.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%252201df24de-3a29-4c57-a6c7-d553a0687e46%2522%252C%2522itemUuid%2522%253A%25224e09c46b-31d6-4091-b35d-06225e3ba3d8%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 4,
+    "titulo": "Burritos de Pastor",
+    "descripcion": "Tortilla de harina rellena de carne de pastor, frijoles, arroz y salsa, todo envuelto y listo para disfrutar.",
+    "precio": "$160.00",
+     "imagen": "/images/grill/burritos.png",
+    "enlace": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%252201df24de-3a29-4c57-a6c7-d553a0687e46%2522%252C%2522itemUuid%2522%253A%25224e09c46b-31d6-4091-b35d-06225e3ba3d8%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  }
+]

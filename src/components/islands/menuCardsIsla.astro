@@ -2,51 +2,48 @@
 import CardsMenu from "../ui/cards.astro";
 import CardsRefrescos from "../ui/cardsRefrescos.astro";
 import CardsBurger from "../ui/cardsBurger.astro";
+import CardsSancks from "../ui/CardsSnacks.astro";
+import CardsGrill from "../ui/cardsGrill.astro";
 ---
 
 <div class="menuCards contenedor">
   <h3 class="h3_linea--decoraccion">Nuestro menú</h3>
   <nav class="menuCards__tabs">
-    <button class="actual" type="button" data-paso="1">Snacks</button>
-    <button type="button" data-paso="2">Munchies</button>
-    <button type="button" data-paso="3">Burgers</button>
+    <button type="button" data-paso="1">Burgers</button>
+    <button type="button" data-paso="2">Refrescos</button>
+    <button class="actual" type="button" data-paso="3">Snacks</button>
     <button type="button" data-paso="4">Grill</button>
-    <button type="button" data-paso="5">Soft drinks</button>
-    <button type="button" data-paso="6">Refrescos</button>
-    <button type="button" data-paso="7">Postres</button>
+    <!-- <button type="button" data-paso="2">Munchies</button> -->
+    <!-- <button type="button" data-paso="5">Soft drinks</button> -->
+    <!-- <button type="button" data-paso="7">Postres</button> -->
   </nav>
 
   <div id="paso-1" class="menuCards__tabs--seccion">
-    <!-- <h2>Snacks</h2> -->
-    <div class="">
-      <CardsMenu />
-    </div>
-  </div>
-
-  <div id="paso-2" class="menuCards__tabs--seccion">
-    <!-- <h2>Munchies</h2> -->
-    <CardsMenu />
-  </div>
-  <div id="paso-3" class="menuCards__tabs--seccion">
-    <!-- <h2>Burgers</h2> -->
     <CardsBurger />
   </div>
-  <div id="paso-4" class="menuCards__tabs--seccion">
-    <!-- <h2>Grill</h2> -->
-    <CardsMenu />
-  </div>
-  <div id="paso-5" class="menuCards__tabs--seccion">
-    <!-- <h2>Soft drinks</h2> -->
-    <CardsMenu />
-  </div>
-  <div id="paso-6" class="menuCards__tabs--seccion">
-    <!-- <h2>Refrescos</h2> -->
+  <div id="paso-2" class="menuCards__tabs--seccion">
     <CardsRefrescos />
   </div>
-  <div id="paso-7" class="menuCards__tabs--seccion">
-    <!-- <h2>Postres</h2> -->
-    <CardsMenu />
+  <div id="paso-3" class="menuCards__tabs--seccion">
+    <div class="">
+      <CardsSancks />
+    </div>
   </div>
+  <div id="paso-4" class="menuCards__tabs--seccion">
+    <CardsGrill />
+  </div>
+  <!-- <div id="paso-5" class="menuCards__tabs--seccion">
+    <h2>Soft drinks</h2> 
+    <CardsMenu />
+  </div>-->
+  <!-- <div id="paso-2" class="menuCards__tabs--seccion">
+    <h2>Munchies</h2> 
+    <CardsMenu />
+    </div>-->
+  <!-- <div id="paso-7" class="menuCards__tabs--seccion">
+          <h2>Postres</h2> 
+          <CardsMenu />
+          </div>-->
 </div>
 
 <script is:client="load">

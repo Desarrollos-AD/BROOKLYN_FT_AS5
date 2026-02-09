@@ -1,4 +1,5 @@
 ---
+const { pathname } = Astro.url;
 const uberEats =
   "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY";
 ---
@@ -19,18 +20,28 @@ const uberEats =
             />
           </div>
 
-          <div class="nav__barra--enlaces--links-enlace activo">
-            <a class="bebasNeueBold" href="/">Inicio</a>
+          <div class="nav__barra--enlaces--links-enlace ">
+            <a class={`nav__item ${pathname === "/" ? "activo" : ""}`} href="/"
+              >Inicio</a
+            >
           </div>
           <div class="nav__barra--enlaces--links-enlace">
-            <a class="bebasNeueBold" href="/nosotros">Nosotros</a>
+            <a
+              class={`nav__item ${pathname === "/nosotros" ? "activo" : ""}`}
+              href="/nosotros">Nosotros</a
+            >
           </div>
           <div class="nav__barra--enlaces--links-enlace">
-            <a class="bebasNeueBold" href="/menu">Menú</a>
+            <a
+              class={`nav__item ${pathname === "/menu" ? "activo" : ""}`}
+              href="/menu">Menú</a
+            >
           </div>
           <div class="nav__barra--enlaces--links-enlace">
-            <a class="bebasNeueBold" href={uberEats} target="_blank"
-              >Uber Eats</a
+            <a
+              class=""
+              href={uberEats}
+              target="_blank">Uber Eats</a
             >
           </div>
         </div>

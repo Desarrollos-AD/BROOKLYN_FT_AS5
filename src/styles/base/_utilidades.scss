@@ -32,10 +32,9 @@
 
 .activo {
   background-color: v.$verde;
-
-  a {
-    color: v.$negro;
-  }
+  color: v.$negro;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
 }
 
 .h3_linea--decoraccion {

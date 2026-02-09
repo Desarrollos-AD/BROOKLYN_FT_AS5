@@ -1,0 +1,43 @@
+---
+import grills from "../../data/grill.json";
+---
+
+<div class="tarjetas">
+  {grills.map((grill) => (
+    <div class="tarjeta" key={grill.id}>
+      <div class="tarjeta_card contenedor">
+
+        <div class="tarjeta__titulo">
+          <h4>{grill.titulo}</h4>
+        </div>
+
+        <div class="tarjeta__img">
+          <img
+            src={grill.imagen}
+            alt={grill.titulo}
+            loading="lazy"
+          />
+        </div>
+
+        <div class="tarjeta__descripcion">
+          <p>{grill.descripcion}</p>
+        </div>
+
+        <div class="btn__amarillo">
+          {grill.enlace ? (
+            <a
+              href={grill.enlace}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {grill.precio}
+            </a>
+          ) : (
+            <span>{grill.precio}</span>
+          )}
+        </div>
+
+      </div>
+    </div>
+  ))}
+</div>

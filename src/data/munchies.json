@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulo": "Buffalo Fries",
+    "descripcion": "Papas a la francesa con queso Cheddar, ranch y boneless con salsa Buffalo.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/header/Cheese Fingers.png",
+    "imagen": "/images/header/Cheese Fingers.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522b11071b8-f477-4a57-848f-68d936d46d51%2522%252C%2522itemUuid%2522%253A%25227a770fd5-a6db-4989-937d-b5b63bb9f102%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 2,
+    "titulo": "Sonora Fries",
+    "descripcion": "Papas a la francesa con arrachera, queso mozzarella, queso Cheddar, tocino y cilantro.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/header/Jalapeño Poppers.png",
+    "imagen": "/images/header/Jalapeño Poppers.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522b11071b8-f477-4a57-848f-68d936d46d51%2522%252C%2522itemUuid%2522%253A%252285266e57-d354-4bea-a73a-2465aa336bdc%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+  },
+  {
+    "id": 3,
+    "titulo": "Burger Potatoes",
+    "descripcion": "Papas crisscut McCain con queso Cheddar, carne de burger, pico de gallo y aderezo de la casa.",
+    "precio": "$230.00",
+    "imagen_sf": "/images/header/sliders_sf.png",
+    "imagen": "/images/header/sliders.png",
+    "link": "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY&mod=quickView&modctx=%257B%2522storeUuid%2522%253A%252231ae1413-47ed-53a9-94e0-6f0b32b07dfa%2522%252C%2522sectionUuid%2522%253A%25228262d2f0-6dd0-42be-b1dd-dc1467f61948%2522%252C%2522subsectionUuid%2522%253A%2522b11071b8-f477-4a57-848f-68d936d46d51%2522%252C%2522itemUuid%2522%253A%2522a5b29348-5e5b-425a-a44d-d35b25517cb3%2522%252C%2522showSeeDetailsCTA%2522%253Atrue%257D&ps=1"
+
+  }
+]

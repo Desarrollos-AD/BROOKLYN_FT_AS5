@@ -13,6 +13,12 @@
     &--info {
       h2 {
         color: v.$verde;
+        font-size: clamp(5rem, 5.5vw, 7rem);
+      }
+      h3{
+        color: v.$amarillo;
+        font-size: clamp(2.5rem, 3vw, 4rem);
+        line-height: 1;
       }
       p {
         color: v.$blanco;

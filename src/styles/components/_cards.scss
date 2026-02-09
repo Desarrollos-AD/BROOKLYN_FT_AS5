@@ -12,6 +12,12 @@
     @include mx.grid(4, 2rem);
   }
 }
+.tarjeta_card{
+  display: flex;
+  flex-direction: column;
+  height: 58rem;
+  justify-content: space-between;
+}
 .tarjeta {
   background-color: v.$grisCards;
   border-radius: 2rem;

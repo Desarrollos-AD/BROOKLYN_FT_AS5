@@ -1,15 +1,27 @@
-<article class="uber">
-    <div class="contenedor">
-        <div class="uber__contenido">
-            <div class="uber__contenido--imagenes">
-                <img src="public/images/envios.png" alt="Uber Eats">
-            </div>
-            <div class="uber__contenido--info">
-                <h2>Enviós en Uber Eats</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt tempore autem reprehenderit eligendi, ex delectus molestiae, numquam nobis excepturi sunt ad sit harum nesciunt quibusdam similique et qui ab beatae mollitia nam minima minus quaerat blanditiis? Dignissimos pariatur cum eos at repellendus magni minima nobis!</p>
+---
+const uberEats =
+  "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY";
+---
 
-                <a class="btn__verde" href="">Hacer pedido</a>
-            </div>
-        </div>
+<article class="uber">
+  <div class="contenedor">
+    <div class="uber__contenido">
+      <div class="uber__contenido--imagenes">
+        <img src="public/images/envios.png" alt="Uber Eats" />
+      </div>
+      <div class="uber__contenido--info">
+        <h2>Enviós en Uber Eats</h2>
+        <h3>¿Antojo inmediato? ¡Te lo llevamos!</h3>
+        <h3>Pide Brooklyn Burgers directo a tu puerta</h3>
+        <p>
+          Ahora puedes disfrutar tus hamburguesas favoritas sin salir de
+          casa.Solo búscanos en Uber Eats, elige tu combo y prepárate para una
+          entrega rápida, caliente y llena de sabor. Brooklyn Burgers está a un
+          clic de llegar a tu mesa.
+        </p>
+
+        <a class="btn__verde" href={uberEats}>Hacer pedido</a>
+      </div>
     </div>
+  </div>
 </article>

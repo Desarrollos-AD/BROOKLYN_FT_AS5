@@ -1,0 +1,42 @@
+---
+import snacks from "../../data/snack.json";
+---
+<div class="tarjetas">
+  {snacks.map((snack) => (
+    <div class="tarjeta" key={snack.id}>
+      <div class="tarjeta_card contenedor">
+
+        <div class="tarjeta__titulo">
+          <h4>{snack.titulo}</h4>
+        </div>
+
+        <div class="tarjeta__img">
+          <img
+            src={snack.imagen}
+            alt={snack.titulo}
+            loading="lazy"
+          />
+        </div>
+
+        <div class="tarjeta__descripcion">
+          <p>{snack.descripcion}</p>
+        </div>
+
+        <div class="btn__amarillo">
+          {snack.enlace ? (
+            <a
+              href={snack.enlace}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {snack.precio}
+            </a>
+          ) : (
+            <span>{snack.precio}</span>
+          )}
+        </div>
+
+      </div>
+    </div>
+  ))}
+</div>
