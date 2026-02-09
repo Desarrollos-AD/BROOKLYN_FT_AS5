@@ -2,7 +2,7 @@
 @use "../base/mixins" as mx;
 
 .fondo__separadorNosotros {
-  background-image: url(../../../public/images/sobreNosotros.jpg);
+  background-image: url(/images/sobreNosotros.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

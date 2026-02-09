@@ -2,7 +2,7 @@
 @use "../base/mixins" as mx;
 
 .sobreNosotros {
-  @include mx.imgFondo('../../../public/images/fondo.jpg');
+  @include mx.imgFondo('/images/fondo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center left;
