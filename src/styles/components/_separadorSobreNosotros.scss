@@ -17,7 +17,7 @@
   align-items: center;
   place-items: center;
   margin: 1rem 0;
-  
+
   @include mx.telefono-mediano {
     @include mx.grid(2, 5rem);
     margin: 15rem 0;
@@ -28,6 +28,7 @@
     h2 {
       color: v.$amarillo;
       font-size: 5rem;
+      line-height: 1.5;
     }
   }
   &__contenido {

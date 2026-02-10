@@ -3,13 +3,13 @@
 @use "sass:color";
 
 .tarjetas {
-  @include mx.grid(1, 2rem);
+  @include mx.grid(1, 0rem);
 
   @include mx.telefono-mediano {
-    @include mx.grid(2, 2rem);
+    @include mx.grid(2, 0rem);
   }
   @include mx.tablet-grande {
-    @include mx.grid(4, 2rem);
+    @include mx.grid(4, 0rem);
   }
 }
 .tarjeta_card{

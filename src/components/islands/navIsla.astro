@@ -1,5 +1,5 @@
 ---
-const { pathname } = Astro.url;
+const pathname = Astro.url.pathname;
 const uberEats =
   "https://www.ubereats.com/store/brooklyn-burgers-costa-verde/Ma4UE0ftU6mU4G8LMrB9-g?diningMode=DELIVERY";
 ---
@@ -8,44 +8,55 @@ const uberEats =
   <div class="contenedor">
     <div class="nav__barra">
       <div class="nav__barra--logo">
-        <img src="/images/brooklyn.jpg" alt="Logo Brooklyn" loading="lazy" />
+        <a href="/">
+          <img src="/images/brooklyn.jpg" alt="Logo Brooklyn" loading="lazy" />
+        </a>
       </div>
+
       <div id="nav" class="nav__barra--enlaces">
         <div class="nav__barra--enlaces--links">
           <div class="nav__barra--logo-enlace">
-            <img
-              src="/images/brooklyn.jpg"
-              alt="Logo Brooklyn"
-              loading="lazy"
-            />
+            <a href="/">
+              <img
+                src="/images/brooklyn.jpg"
+                alt="Logo Brooklyn"
+                loading="lazy"
+              />
+            </a>
           </div>
 
-          <div class="nav__barra--enlaces--links-enlace ">
-            <a class={`nav__item ${pathname === "/" ? "activo" : ""}`} href="/"
-              >Inicio</a
-            >
+          <div class="nav__barra--enlaces--links-enlace">
+            <a class={`nav__item ${pathname === "/" ? "activo" : ""}`} href="/">
+              Inicio
+            </a>
           </div>
+
           <div class="nav__barra--enlaces--links-enlace">
             <a
               class={`nav__item ${pathname === "/nosotros" ? "activo" : ""}`}
-              href="/nosotros">Nosotros</a
+              href="/nosotros"
             >
+              Nosotros
+            </a>
           </div>
+
           <div class="nav__barra--enlaces--links-enlace">
             <a
               class={`nav__item ${pathname === "/menu" ? "activo" : ""}`}
-              href="/menu">Menú</a
+              href="/menu"
             >
+              Menú
+            </a>
           </div>
+
           <div class="nav__barra--enlaces--links-enlace">
-            <a
-              class=""
-              href={uberEats}
-              target="_blank">Uber Eats</a
-            >
+            <a href={uberEats} target="_blank" rel="noopener noreferrer">
+              Uber Eats
+            </a>
           </div>
         </div>
       </div>
+
       <button id="button-menu" class="button-menu">
         <span></span>
         <span></span>

@@ -1,13 +1,18 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as mx;
 .galeria {
-  columns: 3;
+  columns: 2;
   column-gap: 1rem;
+
+  @include mx.telefono-grande {
+    columns: 3;
+  }
+
   &__img {
     break-inside: avoid;
     margin-bottom: 1rem;
     width: 100%;
-    
+
     img,
     video {
       width: 100%;

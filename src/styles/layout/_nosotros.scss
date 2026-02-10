@@ -2,7 +2,7 @@
 @use "../base/mixins" as mx;
 
 .sobreNosotros {
-  @include mx.imgFondo('/images/fondo.jpg');
+  @include mx.imgFondo("/images/fondo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center left;
@@ -35,20 +35,25 @@
         }
       }
     }
+
     &--info {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       flex: 1;
       gap: 2rem;
+      justify-content: center;
+      
       h1 {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: rgb(255, 255, 255);
-        font-size: 6rem;
-        text-align: left;
+        font-size: clamp(5rem, 6vw, 8rem);
+        text-align: center;
+        font-weight: v.$black;
+      
       }
-      p {
-        color: v.$blanco;
+
+      h4 {
+        color: v.$verde;
       }
     }
   }
@@ -60,11 +65,12 @@
     margin: 2.5rem 0;
     gap: 2rem;
 
-    &--img{
+    &--img {
       flex: 1;
     }
-    &--info{
+    &--info {
       flex: 1;
+      text-align:justify;
     }
 
     @include mx.telefono-grande {

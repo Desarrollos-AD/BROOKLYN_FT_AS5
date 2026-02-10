@@ -1,7 +1,6 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as mx;
 
-/* --- Carousel --- */
 .carousel__header {
   width: 100vw;
   margin-top: -5rem;
@@ -12,62 +11,67 @@
   @include mx.tablet_pequena {
     height: 100vh;
   }
-}
 
-.carousel__header .list .item {
-  height: 25rem;
-  position: absolute;
-  top: 80%;
-  transform: translateY(-70%);
-  border-radius: 2rem;
-  background-position: center;
-  background-size: cover;
-  z-index: 100;
-  transition: 1s;
-  left: 100%;
+  .list {
+    .item {
+      height: 25rem;
+      position: absolute;
+      top: 80%;
+      transform: translateY(-70%);
+      border-radius: 2rem;
+      background-position: center;
+      background-size: cover;
+      z-index: 100;
+      transition: 1s;
+      left: 100%;
 
-  @include mx.tablet_pequena {
-    left: 70%;
-    box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 1);
-    width: 18rem;
+      @include mx.tablet_pequena {
+        left: 70%;
+        box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 1);
+        width: 18rem;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        top: 0;
+        left: 0;
+        width: 130%;
+        height: 100%;
+        transform: none;
+        border-radius: 0;
+      }
+
+      &:nth-child(3) {
+        left: 100%;
+        @include mx.tablet_pequena {
+          left: 67%;
+        }
+      }
+
+      &:nth-child(4) {
+        left: calc(67% + 200px);
+      }
+
+      &:nth-child(5) {
+        left: calc(67% + 400px);
+      }
+
+      &:nth-child(6) {
+        left: calc(67% + 600px);
+      }
+
+      &:nth-child(n + 7) {
+        left: calc(67% + 800px);
+        opacity: 0;
+      }
+
+      &:nth-child(2) .content {
+        display: block;
+      }
+    }
   }
 }
 
-/* Main items */
-.carousel__header .list .item:nth-child(1),
-.carousel__header .list .item:nth-child(2) {
-  top: 0;
-  left: 0;
-  width: 130%;
-  height: 100%;
-  transform: none;
-  border-radius: 0;
-}
-
-/* Extra items on right */
-.carousel__header .list .item:nth-child(3) {
-  left: 100%;
-  @include mx.tablet_pequena {
-    left: 67%;
-  }
-}
-.carousel__header .list .item:nth-child(4) {
-  left: calc(67% + 200px);
-}
-.carousel__header .list .item:nth-child(5) {
-  left: calc(67% + 400px);
-}
-.carousel__header .list .item:nth-child(6) {
-  left: calc(67% + 600px);
-}
-
-/* Hide items after 6th */
-.carousel__header .list .item:nth-child(n + 7) {
-  left: calc(67% + 800px);
-  opacity: 0;
-}
-
-/* --- Content inside active item --- */
 .list .item .content {
   position: absolute;
   top: 50%;
@@ -77,49 +81,14 @@
   text-align: left;
   color: v.$blanco;
   display: none;
-}
 
-.list .item:nth-child(2) .content {
-  display: block;
-}
-
-/* Text animations */
-.content .title,
-.content .name,
-.content .des,
-.content .btn {
-  opacity: 0;
-  animation: animate 1s ease-in-out 1 forwards;
-}
-
-.content .title {
-  font-size: 15rem;
-  color: #000000cb;
-  font-weight: bold;
-  animation-delay: 0.3s;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: v.$blanco;
-  text-shadow: 4px 5px 5px v.$amarillo;
-  white-space: nowrap;
-  z-index: -999;
-  position: absolute;
-  top: -100%;
-  left: 150%;
-  transform: translate(-100%, -100%);
-}
-
-.content .name {
-  font-size: 10rem;
-  font-weight: bold;
-  text-shadow: 3px 4px 4px v.$amarillo;
-  animation-delay: 0.6s;
-  white-space: nowrap;
-  writing-mode: vertical-rl;
-  z-index: -999;
-  position: absolute;
-  top: 25%;
-  left: 1%;
-  transform: translate(-50%, -50%);
+  & .title,
+  & .name,
+  & .des,
+  & .btn {
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+  }
 }
 
 .item {
@@ -136,28 +105,26 @@
     height: 100%;
     padding: 8rem 4rem;
     display: flex;
-
-    display: flex;
     flex-direction: column;
-    align-items: flex-start; // izquierda
+    align-items: flex-start;
     padding-block: 5rem;
   }
 
   .name {
-    font-size: 8rem;
+    animation-delay: 0.6s;
+    font-size: clamp(5rem, 7vw, 10rem);
     font-weight: bold;
     writing-mode: vertical-rl;
-    transform: rotate(180deg);
     position: absolute;
-    top: 50%;
-    left: -5rem;
+    top: 45%;
+    left: -7rem;
     transform: translateY(-50%) rotate(180deg);
     white-space: nowrap;
     color: v.$blanco;
     text-shadow: 3px 4px 4px v.$amarillo;
     z-index: 10;
 
-    @include mx.telefono_grande {
+    @include mx.telefono-mediano {
       top: 30%;
     }
 
@@ -167,13 +134,14 @@
     }
   }
   &__descripcion {
-    margin-left: 0rem;
-    margin-top: 70rem;
+    margin-left: -5rem;
+    margin-top: 65rem;
     width: 100%;
+    max-width: 90%;
 
-    @include mx.telefono_grande {
+    @include mx.telefono-mediano {
       margin-left: 5rem;
-      margin-top: 63rem;
+      margin-top: 60rem;
     }
 
     @include mx.tablet_pequena {
@@ -186,23 +154,29 @@
       margin-top: 44rem;
     }
   }
-
   .title {
-    font-size: 14rem;
+    color: #000000cb;
     font-weight: bold;
+    animation-delay: 0.3s;
+    font-size: clamp(7rem, 10vh, 14rem);
+    right: -10rem;
     color: transparent;
     -webkit-text-stroke: 2px v.$blanco;
-    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.555);
     position: absolute;
     top: 28%;
     transform: translateY(-80%);
     white-space: nowrap;
     z-index: 9;
-    left: 4rem;
+    left: -2rem;
+
+    @include mx.telefono-mediano {
+      top: 20%;
+      left: 10rem;
+    }
 
     @include mx.telefono_grande {
       top: 17%;
-      left: 10rem;
     }
 
     @include mx.tablet_pequena {
@@ -210,12 +184,20 @@
       left: 25rem;
     }
   }
+
   .des {
-    width: 100%;
     color: v.$blanco;
-    font-size: 1.8rem;
     line-height: 1.4;
     z-index: 20;
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+
+    @include mx.telefono-mediano {
+      width: 100%;
+      font-size: 1.6rem;
+    }
   }
 
   .btn {
@@ -241,12 +223,12 @@
 /* --- Arrows --- */
 .arrows {
   position: absolute;
-  top: 74%;
+  top: 72%;
   right: 35%;
   display: flex;
   gap: 1rem;
   width: 100%;
-  max-width: 30%;
+  max-width: 45%;
   align-items: center;
   z-index: 100;
   margin: 0 auto;
@@ -275,34 +257,10 @@
   }
 }
 
-/* --- Progress bar --- */
-.carousel .timeRunning {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 0%;
-  background: v.$verde;
-  animation: runningTime 7s linear forwards;
-}
-
-@keyframes runningTime {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 /* --- Responsive --- */
 @media screen and (max-width: 999px) {
   .list .item .content {
     left: 50px;
-  }
-
-  .content .des {
-    font-size: 16px;
   }
 }
 

@@ -37,8 +37,8 @@ import productos from "../data/menu.json";
       <button class="next">></button>
     </div>
 
-    <!-- Progress Bar or Time Running Indicator -->
-    <div class="timeRunning"></div>
+    <!-- Progress Bar or Time Running Indicator
+    <div class="timeRunning"></div> -->
 
     <!-- End of .carousel -->
 
@@ -60,8 +60,6 @@ import productos from "../data/menu.json";
       const prevBtn = document.querySelector(".prev");
       const carousel = document.querySelector(".carousel__h");
       const list = document.querySelector(".list");
-      const items = document.querySelectorAll(".item");
-      const runningTime = document.querySelector(".carousel__h .timeRunning");
 
       // Timing configs
       const timeRunning = 3000;
@@ -75,13 +73,6 @@ import productos from "../data/menu.json";
       // Next/prev button click events
       nextBtn.onclick = () => showSlider("next");
       prevBtn.onclick = () => showSlider("prev");
-
-      // Reset progress bar animation
-      function resetTimeAnimation() {
-        runningTime.style.animation = "none";
-        runningTime.offsetHeight; // trigger reflow
-        runningTime.style.animation = "runningTime 7s linear 1 forwards";
-      }
 
     // Handle carousel slide logic
     function showSlider(direction) {
@@ -110,11 +101,8 @@ import productos from "../data/menu.json";
           nextBtn.click();
         }, timeAutoNext);
 
-        resetTimeAnimation();
       }
 
-      // Start animation on load
-      resetTimeAnimation();
     </script>
   </div>
 </div>

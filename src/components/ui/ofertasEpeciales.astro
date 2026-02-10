@@ -289,7 +289,7 @@
         const fullStar = `<span aria-hidden="true">★</span>`;
         const emptyStar = `<span class="empty-star" aria-hidden="true">☆</span>`;
         return Array.from({ length: totalStars }, (_, i) =>
-          i + 1 <= rating + 0.25 ? fullStar : emptyStar
+          i + 1 <= rating + 0.25 ? fullStar : emptyStar,
         ).join("");
       },
       showNotification(message, type = "success", iconSvg = ICONS.checkCircle) {
@@ -301,7 +301,7 @@
             document
               .querySelectorAll(".notification")
               .forEach((n) => n.remove()),
-          2000
+          2000,
         );
 
         const notificationEl = document.createElement("div");
@@ -337,7 +337,7 @@
           img.onload = () => resolve(img);
           img.onerror = (err) =>
             reject(
-              new Error(`Failed to load image: ${src}. Error: ${err.type}`)
+              new Error(`Failed to load image: ${src}. Error: ${err.type}`),
             );
         });
       },
@@ -348,7 +348,7 @@
         DOM.carouselContainer = document.getElementById(CAROUSEL_ID);
         if (!DOM.carouselContainer) {
           console.error(
-            `Carousel container with ID #${CAROUSEL_ID} not found.`
+            `Carousel container with ID #${CAROUSEL_ID} not found.`,
           );
           return;
         }
@@ -373,14 +373,14 @@
         ];
         if (requiredElements.some((el) => !el)) {
           console.error(
-            "One or more essential carousel elements are missing. Check HTML structure and CSS selectors."
+            "One or more essential carousel elements are missing. Check HTML structure and CSS selectors.",
           );
           return;
         }
 
         DOM.loadingOverlay.classList.add("visible");
         STATE.imagePreloadPromises = PRODUCTS_DATA.map((product) =>
-          Utils.preloadImage(product.imageSrc).catch((e) => e)
+          Utils.preloadImage(product.imageSrc).catch((e) => e),
         );
 
         Promise.allSettled(STATE.imagePreloadPromises).then((results) => {
@@ -436,7 +436,7 @@
           dotEl.setAttribute("aria-controls", `product-panel-${product.id}`);
           dotEl.setAttribute(
             "aria-label",
-            `Go to Product ${index + 1}: ${product.name}`
+            `Go to Product ${index + 1}: ${product.name}`,
           );
           dotEl.dataset.index = index;
           fragment.appendChild(dotEl);
@@ -502,7 +502,7 @@
           DOM.cardsWrapper.addEventListener(
             "transitionend",
             animationEndHandler,
-            { once: true }
+            { once: true },
           );
         } else if (!STATE.isLoaded) {
           const activeCard = DOM.cardsWrapper.querySelector(".card.active");
@@ -586,14 +586,14 @@
               Utils.showNotification(
                 `"${PRODUCTS_DATA[STATE.currentIndex].name}" added to cart (demo).`,
                 "success",
-                ICONS.cart
+                ICONS.cart,
               );
             } else if (e.target.closest(".card__image-action-btn")) {
               const actionButton = e.target.closest(".card__image-action-btn");
               const actionLabel =
                 actionButton.getAttribute("aria-label") || "Action";
               Utils.showNotification(
-                `${actionLabel} for "${PRODUCTS_DATA[STATE.currentIndex].name}" (demo).`
+                `${actionLabel} for "${PRODUCTS_DATA[STATE.currentIndex].name}" (demo).`,
               );
             }
           }
@@ -601,32 +601,32 @@
 
         DOM.carouselContainer.addEventListener(
           "keydown",
-          this.handleKeyDown.bind(this)
+          this.handleKeyDown.bind(this),
         );
         DOM.cardsWrapper.addEventListener(
           "touchstart",
           this.handleTouchStart.bind(this),
-          { passive: true }
+          { passive: true },
         );
         DOM.cardsWrapper.addEventListener(
           "touchmove",
           this.handleTouchMove.bind(this),
-          { passive: false }
+          { passive: false },
         );
         DOM.cardsWrapper.addEventListener(
           "touchend",
-          this.handleTouchEnd.bind(this)
+          this.handleTouchEnd.bind(this),
         );
         DOM.cardsWrapper.addEventListener(
           "touchcancel",
-          this.handleTouchEnd.bind(this)
+          this.handleTouchEnd.bind(this),
         );
         window.addEventListener(
           "resize",
           Utils.debounce(
             this.handleResize.bind(this),
-            CONFIG.debounceResizeTime
-          )
+            CONFIG.debounceResizeTime,
+          ),
         );
       },
 
@@ -659,7 +659,7 @@
           case "Tab":
             if (DOM.paginationDotsContainer.contains(e.target)) {
               const dots = Array.from(
-                DOM.paginationDotsContainer.querySelectorAll('[role="tab"]')
+                DOM.paginationDotsContainer.querySelectorAll('[role="tab"]'),
               );
               const currentDotIndex = dots.indexOf(e.target);
               if (currentDotIndex !== -1) {
@@ -684,8 +684,6 @@
         this.calculateCardWidth();
         this.update(false);
       },
-
-    
     };
 
     if (document.readyState === "loading") {
