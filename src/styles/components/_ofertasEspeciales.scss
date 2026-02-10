@@ -1,28 +1,24 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as mx;
-
 .ofertas {
   &__post {
     display: flex;
     gap: 4rem;
     align-items: center;
     flex-direction: column;
-
+    margin-bottom: 5rem;
     @include mx.telefono-mediano {
       flex-direction: row;
     }
-
     h2 {
       color: v.$verde;
       font-size: clamp(2.8rem, 3vw, 3.4rem);
       font-family: v.$fuente_secundaria;
     }
-
     p {
       color: v.$blanco;
     }
   }
-
   &__cards {
     background-color: v.$gris;
   }
@@ -45,7 +41,6 @@ h4 {
   transition: transform var(--duration-slow) var(--timing-soft-eio);
   will-change: transform;
 }
-
 .card {
   background-color: v.$grisCards;
   border-radius: var(--radius-lg);
@@ -67,12 +62,7 @@ h4 {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-
-  height: auto;
-  min-height: 42rem;
-  padding: 2rem;
 }
-
 .card:not(.active):hover {
   transform: scale(calc(var(--card-scale-inactive) + 0.025))
     translateY(calc(var(--card-y-offset-inactive) - 8px));
@@ -82,13 +72,11 @@ h4 {
   z-index: 5;
   border-color: rgba(var(--color-accent-primary-rgb), 0.2);
 }
-
 .card:focus-visible {
   outline: none;
   box-shadow: var(--shadow-lg), var(--shadow-focus-ring);
   border-color: var(--color-accent-primary);
 }
-
 .card.active {
   opacity: 1;
   filter: blur(0px) saturate(1);
@@ -99,7 +87,6 @@ h4 {
   border-color: transparent;
   cursor: default;
 }
-
 .card.active::after {
   content: "";
   position: absolute;
@@ -112,7 +99,6 @@ h4 {
   animation: pulse-border 2.5s infinite var(--timing-ease-in-out-cubic);
   z-index: -1;
 }
-
 @keyframes pulse-border {
   0%,
   100% {
@@ -126,7 +112,6 @@ h4 {
     transform: scale(1.003);
   }
 }
-
 .card__featured-badge {
   position: absolute;
   top: 12px;
@@ -161,28 +146,21 @@ h4 {
   transform: rotate(2.5deg) translateY(-3.5px) scale(1.1);
   box-shadow: 0 4px 12px rgba(var(--color-accent-primary-rgb), 0.2);
 }
-
 .card__product-image {
   width: 100%;
   height: 100%;
+  object-fit: contain;
   transition:
     transform var(--duration-slow) var(--timing-soft-eio),
     filter var(--duration-normal) var(--timing-ease-out-quint);
   will-change: transform, filter;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.06));
-  object-fit: contain;
-  max-height: 40%;
-  @include mx.telefono-grande {
-    max-height: 100%;
-  }
 }
-
 .card:hover .card__product-image,
 .card.active .card__product-image {
   transform: scale(1.1) translateY(-5px) rotate(1.5deg);
   filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.1)) brightness(1.02);
 }
-
 .nav-arrow {
   position: absolute;
   top: calc(50% - 70px);
@@ -205,21 +183,23 @@ h4 {
   transition-timing-function: var(--timing-ease-out-quint);
   will-change: transform, box-shadow, background-color;
   outline: none;
+
+  &:hover {
+    background-color: var(--color-accent-secondary);
+    transform: translateY(-50%) scale(1.15);
+    box-shadow:
+      var(--shadow-lg),
+      0 0 0 2.5px rgba(var(--color-accent-primary-rgb), 0.1);
+    color: var(--color-accent-primary-hover);
+    border-color: rgba(var(--color-accent-primary-rgb), 0.2);
+  }
 }
 .nav-arrow .icon {
   width: 24px;
   height: 24px;
   transition: transform var(--duration-fast) var(--timing-elegant-snap);
 }
-.nav-arrow:hover {
-  background-color: var(--color-accent-secondary);
-  transform: translateY(-50%) scale(1.15);
-  box-shadow:
-    var(--shadow-lg),
-    0 0 0 2.5px rgba(var(--color-accent-primary-rgb), 0.1);
-  color: var(--color-accent-primary-hover);
-  border-color: rgba(var(--color-accent-primary-rgb), 0.2);
-}
+
 .nav-arrow:hover .icon {
   transform: scale(1.2);
 }
@@ -239,7 +219,6 @@ h4 {
 .nav-arrow.next-arrow {
   right: 5rem;
 }
-
 .pagination-dots {
   display: flex;
   justify-content: center;
@@ -284,7 +263,6 @@ h4 {
 .pagination-dot.active:hover {
   transform: scaleY(1.2) scaleX(1.05);
 }
-
 .keyboard-hint {
   position: absolute;
   bottom: -38px;
@@ -329,7 +307,6 @@ h4 {
   width: 2rem;
   height: 2rem;
 }
-
 .progress-container {
   width: calc(100% - 80px);
   margin-inline: auto;
